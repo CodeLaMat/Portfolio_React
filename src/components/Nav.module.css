@@ -16,16 +16,12 @@
   position: relative;
 }
 
-.nav ul li::after {
+.nav ul li a::after {
   content: "";
   height: 3px;
   width: 0;
   display: inherit;
-  background-image: linear-gradient(
-    90deg,
-    var(--secondary-text-color),
-    var(--primary-text-color)
-  );
+  background-image: linear-gradient(90deg, #8892b0, #56f0d4a1);
   transition: 0.7s ease-in all;
 }
 
