@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  justify-content: end;
+}
+
+.nav ul li {
+  display: inline-block;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #56f0d4a1;
+  padding: 1rem;
+  font-size: 17px;
+  font-weight: 400;
+  position: relative;
+}
+
+.nav ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  display: inherit;
+  background-image: linear-gradient(
+    90deg,
+    var(--secondary-text-color),
+    var(--primary-text-color)
+  );
+  transition: 0.7s ease-in all;
+}
+
+.nav ul li:hover::after {
+  width: 100%;
+}
+
+i {
+  font-size: 3rem;
+}
