@@ -1,0 +1,32 @@
+@use "../../../src/utilities/variables/" as v;
+
+.aboutMe {
+  @include v.headline-medium;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 50px;
+}
+
+.imageAboutme {
+  position: relative;
+}
+
+.imageAboutme::after {
+  display: grid;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 30%;
+  background-image: linear-gradient(120deg, #ffffff, #56f0d4);
+  opacity: 0.6;
+}
+
+.imgMe {
+  border-radius: 30%;
+  height: 20rem;
+  margin-right: 50px;
+}

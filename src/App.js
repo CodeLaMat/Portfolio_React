@@ -3,7 +3,7 @@ import "./App.scss";
 import Layout from "./pages/Layout";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor";
-import Home from "./pages/Home";
+import Home from "./pages/Homepage/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
