@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../components/Header.module.css";
+import classes from "../components/Header.module.scss";
 import Nav from "./Nav";
 import { Link } from "react-router-dom";
 import Logo from "../assets/photos/logoWB.png";

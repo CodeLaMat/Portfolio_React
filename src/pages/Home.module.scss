@@ -1,0 +1,185 @@
+@use "../../src/utilities/variables/" as v;
+
+main {
+  @include v.display-small;
+  height: 100vh;
+  overflow: hidden;
+  background-color: v.$color-primary-background;
+}
+
+/* -----------SECTIONS---------- */
+
+section {
+  min-height: 1vh;
+  min-width: 1vh;
+  scroll-margin-top: 4rem;
+  margin: 50px 120px 200px 120px;
+  display: block;
+}
+
+/* ------------SECTION1----------- */
+
+.welcomeText {
+  margin: 0px;
+  padding: 0px;
+  color: #f0f0f0;
+  font-size: 4em;
+}
+.welcomeMessage {
+  margin: 0px;
+  padding: 0px;
+  color: #8892b0;
+  font-size: 3em;
+}
+
+.student {
+  color: #dde1ed;
+  width: 90%;
+  padding: 0px;
+  margin: 20px 0px 0px 0px;
+  font-size: 1.5rem;
+}
+
+section button {
+  background-color: #ffffff00;
+  border: solid 1px;
+  border-color: #56f0d4a1;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 10px 32px;
+  color: #56f0d4a1;
+  cursor: pointer;
+}
+
+/* -------------SECTION ABOUT ME------------- */
+
+.imageAboutme::after {
+  display: grid;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 30%;
+  background-image: linear-gradient(120deg, #ffffff, #56f0d4);
+  opacity: 0.6;
+}
+
+#imgMe {
+  border-radius: 30%;
+  height: 20rem;
+  width: auto;
+  margin-right: 50px;
+}
+
+/* --------------SKILLS------------- */
+
+.skills_inner {
+  display: block;
+  width: 80%;
+}
+
+#skillsLine .skills_group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.skill {
+  background-color: var(--lighter-text-color);
+  padding: 2rem;
+  border: 1px solid var(--primary-text-color);
+}
+
+progress[value] {
+  height: 1 rem;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: var(--secondary-text-color);
+  border-radius: 2px;
+}
+
+progress[value]::-webkit-progress-value {
+  background: var(--primary-text-color);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+/* --------------SECTION PROJECTS--------------- */
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 8px -16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.row,
+.row > .column {
+  padding: 2px;
+}
+
+.column {
+  float: left;
+  width: 90%;
+  border: solid 3px;
+  border-radius: 5px;
+  border-image: linear-gradient(var(--primary-text-color), var(--h3-color)) 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: var(--lighter-text-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.content img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--background-color);
+}
+
+#mobileButton {
+  display: none;
+}
+
+/*-------------SECTION GALLERY------------- */
+
+.row1 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(40px, 2fr));
+  grid-template-rows: repeat(4, minmax(40px, 2fr));
+  grid-gap: 0.4rem;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  min-height: 150vh;
+}
+
+.column1 {
+  display: grid;
+  max-height: 80px;
+}
+
+.column1 img {
+  margin-top: 8px;
+  width: 100%;
+}

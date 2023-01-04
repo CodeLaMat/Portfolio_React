@@ -1,8 +1,8 @@
 import React from "react";
+import "./App.scss";
 import Layout from "./pages/Layout";
-import { BrowserRouter, Switch, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor";
-import { AnimatePresence } from "framer-motion";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
@@ -12,7 +12,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <AnimatedCursor
           innerSize={10}

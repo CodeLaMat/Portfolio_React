@@ -16,7 +16,7 @@
   position: relative;
 }
 
-.nav ul li a::after {
+.nav ul li::after {
   content: "";
   height: 3px;
   width: 0;

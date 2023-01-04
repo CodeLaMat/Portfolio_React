@@ -1,6 +1,8 @@
+@use "../../src/utilities/variables/" as v;
+
 .header {
   width: 100%;
-  background-color: #15344e;
+  background-color: v.$color-primary-background;
   position: sticky;
   top: 0;
   display: flex;
