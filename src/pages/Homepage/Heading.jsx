@@ -17,10 +17,11 @@ const Heading = () => {
           your ideas and experiences to help me on this way. Thanks in advance.
         </p>
         <div>
-          <a href="/contact" role="button"></a>
-          <button type="button" className={classes.contact_button}>
-            Contact me here
-          </button>
+          <a href="/contact" role="button">
+            <button type="button" className={classes.contact_button}>
+              Contact me here
+            </button>
+          </a>
         </div>
       </div>
     </div>

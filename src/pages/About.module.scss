@@ -2,12 +2,12 @@
 
 .aboutMe {
   @include v.headline-medium;
-  min-height: 90vh;
+
   display: grid;
-  grid-template-columns: 4fr 2fr;
-  gap: 10%;
+  grid-template-columns: 8fr 1fr;
+  min-height: 90vh;
+  gap: 5%;
   justify-content: center;
-  align-items: center;
 }
 
 .imageAboutme {

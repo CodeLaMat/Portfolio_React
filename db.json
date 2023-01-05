@@ -1,0 +1,70 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "date": "31.11.2022",
+      "title": "Speedgame",
+      "github": "https://github.com/CodeLaMat/Speedgame.git",
+      "description": "Click as many pizzas as you can and get points.",
+      "external": "https://codelamat.github.io/Speedgame/",
+      "techs": ["React", "JS", "CSS"],
+      "company": "Business College Helsinki",
+      "showInProjects": true
+    },
+    {
+      "id": 2,
+      "date": "01.01.2023",
+      "title": "TasteIT app",
+      "github": "https://github.com/CodeLaMat/tasteIT.git",
+      "description": "This is a web application where users can add their own food recipes from their own traditional kitchen as well as from around the world.",
+      "external": "https://codelamat.github.io/tasteIT/",
+      "techs": ["React", "SCSS", "JSX", "JSON"],
+      "company": "Business College Helsinki",
+      "showInProjects": true
+    },
+    {
+      "id": 3,
+      "date": "25.12.2022",
+      "title": "Animals&Birds",
+      "github": "https://github.com/CodeLaMat/Animals-birds.git",
+      "description": "This is a web application where users can get pictures of animals and birds by their name, add/remove likes to/of each animal/bird.",
+      "external": "https://codelamat.github.io/Animals-birds/",
+      "techs": ["React", "JS", "CSS", "JSON"],
+      "company": "Business College Helsinki",
+      "showInProjects": true
+    },
+    {
+      "id": 4,
+      "date": "20.11.2022",
+      "title": "FormTask",
+      "github": "https://github.com/CodeLaMat/form_task.git",
+      "description": "This is a web application where users can input their notes and messages and send it to the database kept in .json format in local machine.",
+      "external": "https://codelamat.github.io/form_task/",
+      "techs": ["React", "JS", "CSS", "JSON"],
+      "company": "Business College Helsinki",
+      "showInProjects": true
+    },
+    {
+      "id": 5,
+      "date": "15.12.2022",
+      "title": "Sorting",
+      "github": "https://github.com/CodeLaMat/SortingTasks.git",
+      "description": "This is a web application where users can check palindrome word or sentences,play with bubble sorting and practice Stack and Queue data structures.",
+      "external": "https://codelamat.github.io/SortingTasks/",
+      "techs": ["React", "JS", "CSS"],
+      "company": "Business College Helsinki",
+      "showInProjects": true
+    },
+    {
+      "id": 5,
+      "date": "15.12.2022",
+      "title": "Pokedex",
+      "github": "https://github.com/CodeLaMat/Pokedex.git",
+      "description": "This is a web application where I fetch Pokemon data from internet and display them in sepatate cards allocated for each of Pokemons. ",
+      "external": "https://codelamat.github.io/Pokedex/",
+      "techs": ["React", "JS", "CSS"],
+      "company": "Business College Helsinki",
+      "showInProjects": true
+    }
+  ]
+}

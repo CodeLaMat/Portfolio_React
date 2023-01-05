@@ -2,13 +2,14 @@
 
 .heading {
   @include v.display-small;
+  margin-top: 20px;
   height: 90vh;
   overflow: hidden;
   background-color: v.$color-primary-background;
 }
 
 .welcomeText {
-  margin: 0px;
+  margin: 10px 0;
   padding: 0px;
   color: v.$color-on-primary-heading-text;
   font-size: 2em;

@@ -1,0 +1,12 @@
+@use "../../src/utilities/variables/" as v;
+
+.projects {
+  @include v.headline-medium;
+  min-height: 90vh;
+  justify-content: center;
+}
+
+.projects_container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+}

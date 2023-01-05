@@ -1,0 +1,61 @@
+@use "../../src/utilities/variables/" as v;
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
+
+.card {
+  margin: 10px;
+  min-width: 90px;
+  height: 350px;
+  background-color: v.$color-on-primary-heading-text;
+  padding: 1.8rem;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  justify-content: center;
+  align-items: center;
+  color: v.$color-primary-background;
+}
+
+.card_header {
+  display: block;
+  width: 100%;
+  min-height: 80%;
+}
+
+.card_top {
+  display: flex;
+  justify-content: space-between;
+}
+.project_links {
+  display: flex;
+  justify-content: space-between;
+  width: 40px;
+}
+
+.project_title {
+  cursor: pointer;
+}
+.project_description {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+footer {
+  display: flex;
+  width: 100%;
+  box-sizing: inherit;
+}
+
+.project_tech_list {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 20px 0px 0px;
+}
+
+.project_tech_list li {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  line-height: 1.75;
+  margin-right: 10px;
+}
