@@ -2,7 +2,7 @@
 
 .heading {
   @include v.display-small;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
   background-color: v.$color-primary-background;
 }
@@ -14,7 +14,7 @@
   font-size: 2em;
 }
 .welcomeMessage {
-  margin-top: 40px;
+  margin-top: 50px;
   padding: 0px;
   color: v.$color-on-secondary-text;
   font-size: 1.5em;

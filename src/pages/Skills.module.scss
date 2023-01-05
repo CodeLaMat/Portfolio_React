@@ -1,0 +1,105 @@
+@use "../../src/utilities/variables/" as v;
+
+.skills {
+  @include v.headline-medium;
+  min-height: 120vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills_inner {
+  display: block;
+  max-width: 80%;
+}
+
+.skills_group {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  gap: 5%;
+  padding: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.skillsLine {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.skill_box {
+  display: grid;
+  min-width: 10px;
+  background-color: v.$color-on-secondary-text;
+  padding: 1rem;
+  color: v.$color-primary-background;
+  justify-items: center;
+}
+
+.skill_barSpan {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.bar_container {
+  min-width: 90px;
+
+  .progressbar_container {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border: 1px solid v.$color-on-primary-heading-text;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    .progressbar_complete {
+      position: absolute;
+      left: 0;
+      top: 0px;
+      height: 90%;
+      background-color: v.$color-primary-background;
+      border-radius: 10px;
+      animation: g 2500ms infinite ease-in-out;
+      z-index: 2;
+      .progressbar_liquid {
+        z-index: -1;
+        width: 90px;
+        height: 90px;
+        animation: g 4000ms infinite ease-in-out,
+          r 5000ms infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+        position: absolute;
+        right: -5px;
+        top: -20px;
+        background-color: v.$color-primary-background;
+        border-radius: 40%;
+      }
+    }
+    .progress {
+      z-index: -1;
+    }
+  }
+}
+
+@keyframes g {
+  0% {
+    background-color: v.$color-primary-background;
+  }
+  50% {
+    background-color: #607e9e;
+  }
+  100% {
+    background-color: v.$color-primary-background;
+  }
+}
+
+@keyframes r {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
