@@ -8,51 +8,68 @@
 
 .contact_container {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 2fr 0.5fr 2fr;
 }
 
-.form_container {
-  display: grid;
-  grid-template-columns: 2fr;
+.media_email {
+  border: 1px solid v.$color-on-primary-text;
+  max-width: 50%;
+  padding: 0 20px;
+}
+
+.media_icons {
+  display: flex;
+  justify-content: start;
   gap: 10px;
-  margin: 3rem auto;
-  width: 50%;
-  justify-items: center;
+  color: v.$color-on-primary-text;
 }
 
 .form_input {
-  border-radius: 4px;
+  color: v.$color-on-secondary-text;
+  background-color: v.$color-secondary-background;
+  box-shadow: 0 0 0.4vw v.$color-on-secondary-text, 0 0 0 0.15vw transparent;
+  border-radius: 0.2vw;
   border: none;
-  width: 90%;
-  font-size: 1.2rem;
-  color: v.$color-on-primary-text;
-}
-label {
-  min-width: 180px;
-  clear: left;
-  text-align: right;
-  padding-right: 10px;
+  outline: none;
+  padding: 0.4vw;
+  min-width: 95%;
+  transition: 0.4s;
 }
 
-input,
-label,
-textarea {
-  float: left;
-  min-width: 40%;
-  border-radius: 5px;
+.form_input:hover {
+  box-shadow: 0 0 0 0.15vw v.$color-on-primary-text;
 }
-input,
-textarea {
-  background-color: v.$color-on-primary-heading-text;
+
+.form_input:focus {
+  box-shadow: 0 0 0 0.15vw v.$color-on-primary-text;
+}
+
+.form_input::placeholder {
+  color: v.$color-on-primary-text;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 1vw 4vw;
+  width: 100%;
+  justify-items: center;
+}
+
+.form_line {
+  margin-top: 40px;
+
+  border: 0.5px solid;
+  border-color: v.$color-on-primary-text;
 }
 
 .footer_button {
-  margin: 2em 2em 0em;
   background-color: transparent;
   border-radius: 3px;
   border: solid 1px;
   padding: 0.5rem 1.5rem;
   color: v.$color-on-primary-text;
-  font-size: inherit;
+  font-size: 1vw;
   cursor: pointer;
 }
