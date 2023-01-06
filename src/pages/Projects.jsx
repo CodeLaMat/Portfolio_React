@@ -8,7 +8,9 @@ const Projects = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/projects")
+      .get(
+        "https://firebasestorage.googleapis.com/v0/b/eyvaz-alishov.appspot.com/o/db.json?alt=media&token=39d6f6ac-ac12-4ae7-b8ef-bd5ef1b61d76"
+      )
       .then((response) => setProjects(response.data));
   }, []);
 
