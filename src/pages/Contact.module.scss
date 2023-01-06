@@ -65,11 +65,12 @@
 }
 
 .footer_button {
-  background-color: transparent;
+  display: flex;
   border-radius: 3px;
-  border: solid 1px;
-  padding: 0.5rem 1.5rem;
+  border: solid 1px v.$color-on-primary-text;
   color: v.$color-on-primary-text;
   font-size: 1vw;
   cursor: pointer;
+  justify-content: center;
+  width: 98%;
 }

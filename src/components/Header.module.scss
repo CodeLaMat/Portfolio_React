@@ -50,17 +50,6 @@
   transform: rotate(360deg);
 }
 
-/*--------Scrolling tools----------*/
-
-.bg {
-  background-color: rgb(255, 255, 255);
-}
-
-.bg a,
-.bg span {
-  color: #215179;
-}
-
 /* --------Side Email--------- */
 
 .eMailContainer {
@@ -84,7 +73,6 @@
   writing-mode: vertical-rl;
   text-decoration: none;
   text-decoration-skip-ink: auto;
-  color: inherit;
   position: relative;
 }
 
@@ -103,8 +91,8 @@
 }
 
 .emailBox:before {
-  border-left: 1px solid var(--primary-text-color);
-  border-right: 1px solid var(--primary-text-color);
+  border-left: 1px solid v.$color-on-primary-text;
+  border-right: 1px solid v.$color-on-primary-text;
   -webkit-transform: scale(1, 0);
   transform: scale(1, 0);
 }
@@ -114,4 +102,16 @@
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+// Scroll style
+
+.header_bg {
+  background-color: v.$color-outline-dark;
+  top: 0;
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+  color: v.$color-primary-background;
 }

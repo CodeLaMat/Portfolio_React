@@ -1,5 +1,22 @@
 import React from "react";
 import classes from "./Contact.module.scss";
+import { Link } from "react-router-dom";
+
+const ButtonMailto = ({ mailto, label }) => {
+  return (
+    <Link
+      type="button"
+      className={classes.footer_button}
+      to="#"
+      onClick={(e) => {
+        window.location.href = mailto;
+        e.preventDefault();
+      }}
+    >
+      {label}
+    </Link>
+  );
+};
 const Contact = () => {
   return (
     <div className={classes.contacts}>
@@ -151,15 +168,16 @@ const Contact = () => {
             />
           </div>
           <div className={classes.form_inputDiv}>
-            <textArea
+            <textarea
               className={classes.form_input}
               name="message"
               placeholder="Write a message"
-            ></textArea>
+            ></textarea>
           </div>
-          <button className={classes.footer_button} type="submit">
-            Send message
-          </button>
+          <ButtonMailto
+            label="Send message"
+            mailto="mailto:eyvaz.alishov@gmail.com"
+          />
         </div>
       </div>
     </div>

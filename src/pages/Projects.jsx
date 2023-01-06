@@ -12,8 +12,6 @@ const Projects = () => {
       .then((response) => setProjects(response.data));
   }, []);
 
-  console.log(projects);
-
   return (
     <div className={classes.projects}>
       <div>

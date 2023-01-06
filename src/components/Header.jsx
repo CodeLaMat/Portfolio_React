@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ExternalLink } from "react-external-link";
 import Logo from "../assets/photos/logoWB.png";
@@ -6,9 +6,21 @@ import classes from "../components/Header.module.scss";
 import Nav from "./Nav";
 
 export default function Header() {
+  const [scrolling, setScrolling] = useState(false);
+
+  const changeClass = () => {
+    const scrollValue = document.documentElement.scrollTop;
+    if (scrollValue > 40) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  };
+  window.addEventListener("scroll", changeClass);
+
   return (
     <div className={classes.header_container}>
-      <header className={classes.header}>
+      <header className={scrolling ? classes.header_bg : classes.header}>
         <Link to="/">
           <div className={classes.hoverable} id="header_logo">
             <img src={Logo} className={classes.logo} alt="logo" />
