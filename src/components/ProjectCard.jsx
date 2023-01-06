@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./ProjectCard.module.scss";
-import { Link } from "react-router-dom";
 
 export default function ProjectCard({
   projects,
@@ -97,7 +96,7 @@ export default function ProjectCard({
         />
       </header>
 
-      <footer>
+      <footer className={classes.card_footer}>
         {techs && (
           <ul className={classes.project_tech_list}>
             {techs.map((tech, i) => (

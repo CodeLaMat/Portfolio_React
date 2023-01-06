@@ -16,7 +16,24 @@ const Projects = () => {
 
   return (
     <div className={classes.projects}>
-      <div>Projects</div>
+      <div>
+        <h2>Projects</h2>
+      </div>
+      <div className={classes.projects_inner}>
+        <p>
+          I'm excited to share with you some of the projects I've been working
+          on. From web development to data structures, I enjoy tackling a wide
+          range of challenges and technologies. This page features a selection
+          of my most recent and noteworthy projects. I worked on these projects
+          as a part of my tasks in Full Stack Web Developer programme at
+          Helsinki Business College. Although some of the projects seems to be
+          incomplete, the task itself is completed.
+        </p>
+        <p>
+          Click on a project to see more details and learn more about my
+          experience and skills. You can check both live links and github links.
+        </p>
+      </div>
       <div className={classes.projects_container}>
         {projects &&
           projects.map((project) => (

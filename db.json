@@ -2,12 +2,12 @@
   "projects": [
     {
       "id": 1,
-      "date": "31.11.2022",
-      "title": "Speedgame",
-      "github": "https://github.com/CodeLaMat/Speedgame.git",
-      "description": "Click as many pizzas as you can and get points.",
-      "external": "https://codelamat.github.io/Speedgame/",
-      "techs": ["React", "JS", "CSS"],
+      "date": "16.12.2022",
+      "title": "Habit Tracker",
+      "github": "https://github.com/CodeLaMat/habit_tracker-Team_project.git",
+      "description": "Habit-Tracker is an application that helps you to keep up with your daily habits. This is our team project which is created by 4 team members ",
+      "external": "https://codelamat.github.io/habit_tracker-Team_project/",
+      "techs": ["React", "Bootstrap", "Firebase", "Firestore"],
       "company": "Business College Helsinki",
       "showInProjects": true
     },
@@ -62,6 +62,17 @@
       "github": "https://github.com/CodeLaMat/Pokedex.git",
       "description": "This is a web application where I fetch Pokemon data from internet and display them in sepatate cards allocated for each of Pokemons. ",
       "external": "https://codelamat.github.io/Pokedex/",
+      "techs": ["React", "JS", "CSS"],
+      "company": "Business College Helsinki",
+      "showInProjects": true
+    },
+    {
+      "id": 6,
+      "date": "31.11.2022",
+      "title": "Speedgame",
+      "github": "https://github.com/CodeLaMat/Speedgame.git",
+      "description": "Click as many pizzas as you can and get points.",
+      "external": "https://codelamat.github.io/Speedgame/",
       "techs": ["React", "JS", "CSS"],
       "company": "Business College Helsinki",
       "showInProjects": true

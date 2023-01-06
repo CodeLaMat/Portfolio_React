@@ -32,3 +32,8 @@
 i {
   font-size: 3rem;
 }
+
+.resume_button a {
+  border: 2px solid #56f0d4a1;
+  border-radius: 5px;
+}

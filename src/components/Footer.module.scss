@@ -15,52 +15,6 @@
   color: v.$color-primary-background;
 }
 
-.form_container {
-  display: grid;
-  grid-template-columns: 2fr;
-  gap: 10px;
-  margin: 3rem auto;
-  width: 50%;
-  justify-items: center;
-}
-
-.form_input {
-  border-radius: 4px;
-  border: none;
-  width: 90%;
-  font-size: 1.2rem;
-  color: v.$color-on-primary-text;
-}
-label {
-  min-width: 180px;
-  clear: left;
-  text-align: right;
-  padding-right: 10px;
-}
-
-input,
-label,
-textarea {
-  float: left;
-  min-width: 40%;
-  border-radius: 5px;
-}
-input,
-textarea {
-  background-color: v.$color-on-primary-heading-text;
-}
-
-.footer_button {
-  margin: 2em 2em 0em;
-  background-color: transparent;
-  border-radius: 3px;
-  border: solid 1px;
-  padding: 0.5rem 1.5rem;
-  color: v.$color-on-primary-text;
-  font-size: inherit;
-  cursor: pointer;
-}
-
 .line1 {
   margin-top: 40px;
   width: 80%;

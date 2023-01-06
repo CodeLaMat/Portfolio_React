@@ -16,26 +16,6 @@ const Footer = () => {
       <hr className={classes.line1} />
       <div className={classes.footer}>
         {" "}
-        <div className={classes.contact_header}>
-          <h2>Contact me</h2>{" "}
-        </div>
-        <div className={classes.form_container}>
-          <div className={classes.form_input}>
-            <label htmlFor="name">Your name: </label>
-            <input type="text" name="name" id="name" />
-          </div>
-          <div className={classes.form_input}>
-            <label htmlFor="email">Your email: </label>
-            <input type="email" name="email" id="email" />
-          </div>
-          <div className={classes.form_input}>
-            <label htmlFor="message">Your message: </label>
-            <textArea name="message" id="message"></textArea>
-          </div>
-          <button className={classes.footer_button} type="submit">
-            Send message
-          </button>
-        </div>
         <MDBFooter className="text-center text-white">
           <MDBContainer className="pt-4">
             <section className="mb-4">

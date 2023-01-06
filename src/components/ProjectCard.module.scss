@@ -7,11 +7,20 @@
   height: 350px;
   background-color: v.$color-on-primary-heading-text;
   padding: 1.8rem;
-  transition: 0.5s ease-out;
-  overflow: visible;
   justify-content: center;
   align-items: center;
   color: v.$color-primary-background;
+  box-shadow: 0 1px 3px v.$color-on-secondary-text,
+    0 1px 2px v.$color-on-primary-text;
+}
+
+.card:hover {
+  transform: translateY(-3%);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+    opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+    transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  box-shadow: v.$color-on-secondary-text 0px 13px 47px -5px,
+    v.$color-on-primary-text 0px 8px 16px -8px;
 }
 
 .card_header {
@@ -30,14 +39,23 @@
   width: 40px;
 }
 
+.project_links a:hover {
+  color: v.$color-on-primary-text;
+}
+
+.project_title:hover {
+  color: v.$color-on-primary-text;
+}
+
 .project_title {
   cursor: pointer;
 }
+
 .project_description {
   font-size: 1rem;
   line-height: 1.2;
 }
-footer {
+.card_footer {
   display: flex;
   width: 100%;
   box-sizing: inherit;
