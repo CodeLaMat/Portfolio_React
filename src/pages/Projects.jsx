@@ -8,11 +8,11 @@ const Projects = () => {
 
   useEffect(() => {
     axios
-      .get(
-        "https://firebasestorage.googleapis.com/v0/b/eyvaz-alishov.appspot.com/o/db.json?alt=media&token=39d6f6ac-ac12-4ae7-b8ef-bd5ef1b61d76"
-      )
+      .get("gs://eyvaz-alishov.appspot.com/db.json")
       .then((response) => setProjects(response.data));
   }, []);
+
+  console.log(projects);
 
   return (
     <div className={classes.projects}>
