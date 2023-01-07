@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
 
 .card {
+  @include v.title-large;
   margin: 10px;
-  min-width: 90px;
+  min-width: 50px;
   height: 350px;
   background-color: v.$color-on-primary-heading-text;
   padding: 1.8rem;
