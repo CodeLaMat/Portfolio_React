@@ -8,7 +8,7 @@ const Projects = () => {
 
   useEffect(() => {
     axios
-      .get("gs://eyvaz-alishov.appspot.com/db.json")
+      .get("https://eyvaz-alishov-default-rtdb.firebaseio.com/projects.json")
       .then((response) => setProjects(response.data));
   }, []);
 
