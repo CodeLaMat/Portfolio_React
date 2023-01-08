@@ -76,6 +76,17 @@
       "techs": ["React", "JS", "CSS"],
       "company": "Business College Helsinki",
       "showInProjects": true
+    },
+    {
+      "id": 6,
+      "date": "31.11.2022",
+      "title": "Speedgame",
+      "github": "https://github.com/CodeLaMat/Speedgame.git",
+      "description": "Click as many pizzas as you can and get points.",
+      "external": "https://codelamat.github.io/Speedgame/",
+      "techs": ["React", "JS", "CSS"],
+      "company": "Business College Helsinki",
+      "showInProjects": true
     }
   ]
 }
