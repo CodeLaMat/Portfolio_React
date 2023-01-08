@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import React from "react";
 import classes from "./Nav.module.scss";
 
-import Pdf from "../assets/resume.pdf";
+import Pdf from "../../assets/resume.pdf";
 
 const onResumeClick = () => {
   window.open(Pdf);

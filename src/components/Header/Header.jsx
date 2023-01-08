@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ExternalLink } from "react-external-link";
-import Logo from "../assets/photos/logoWB.png";
-import classes from "../components/Header.module.scss";
-import Nav from "./Nav";
+import Logo from "../../assets/photos/logoWB.png";
+import classes from "./Header.module.scss";
+import Nav from "../Nav/Nav";
 
 export default function Header() {
   const [scrolling, setScrolling] = useState(false);

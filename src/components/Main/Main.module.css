@@ -1,0 +1,9 @@
+.main {
+  padding: 50px 150px 30px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .main {
+    padding: 5px 50px 10px;
+  }
+}

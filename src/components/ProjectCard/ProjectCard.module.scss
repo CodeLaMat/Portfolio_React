@@ -1,8 +1,9 @@
-@use "../../src/utilities/variables/" as v;
+@use "../../../src/utilities/variables/" as v;
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
 
 .card {
   @include v.title-large;
+
   margin: 10px;
   min-width: 50px;
   height: 350px;

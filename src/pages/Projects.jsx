@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import classes from "./Projects.module.scss";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../components/ProjectCard/ProjectCard";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
