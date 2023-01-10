@@ -15,11 +15,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <AnimatedCursor
-          innerSize={10}
-          outerSize={30}
+          innerSize={15}
+          outerSize={5}
           color="86, 240, 212"
-          outerAlpha={0.4}
-          innerScale={0.6}
+          outerAlpha={0.8}
+          innerScale={1.5}
           outerScale={0}
         />
         <Routes>

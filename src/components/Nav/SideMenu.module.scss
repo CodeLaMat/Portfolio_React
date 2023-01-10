@@ -6,11 +6,11 @@
   flex-flow: row nowrap;
 
   li {
-    padding: 12px 6px;
+    padding: 12px 0px;
   }
   @media (max-width: 780px) {
     flex-flow: column nowrap;
-    background-color: v.$color-on-primary-heading-text;
+    background-color: v.$color-outline-dark;
     position: fixed;
     transform: translateX(100%);
     top: 0;
