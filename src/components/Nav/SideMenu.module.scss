@@ -44,3 +44,10 @@
     transition: transform 0.3s ease-in-out;
   }
 }
+
+.resume_button {
+  background-color: aliceblue;
+  border: 2px solid v.$color-on-primary-text;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -33,7 +33,7 @@ const RightNav = ({ menuOpen }) => {
           {" "}
           <NavLink to="/contact">Contact</NavLink>
         </li>
-        <li>
+        <li classes={classes.resume_button}>
           <NavLink>
             <a onClick={onResumeClick}>Resume</a>
           </NavLink>
