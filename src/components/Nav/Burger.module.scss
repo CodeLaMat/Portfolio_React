@@ -1,0 +1,82 @@
+@use "../../../src/utilities/variables/" as v;
+
+.burger_menu {
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 15px;
+  right: 10px;
+  z-index: 20;
+  display: none;
+  @media (max-width: 588px) {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+  }
+  .burger_menu_line1 {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: v.$color-on-primary-heading-text;
+    border-radius: 10px;
+    transform: rotate(0);
+  }
+  .burger_menu_line2 {
+    width: 2rem;
+    height: 0.3rem;
+    background-color: v.$color-on-primary-heading-text;
+    border-radius: 10px;
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .burger_menu_line3 {
+    width: 2rem;
+    height: 0.35rem;
+    background-color: v.$color-on-primary-heading-text;
+    border-radius: 10px;
+    transform: rotate(0);
+  }
+}
+
+.menu_opened {
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 20;
+  display: none;
+  @media (max-width: 588px) {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+  }
+
+  .burger_menu_line1 {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: v.$color-on-primary-text;
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+    transform: rotate(45deg);
+  }
+  .burger_menu_line2 {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: v.$color-on-primary-text;
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  .burger_menu_line3 {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: v.$color-on-primary-text;
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+    transform: rotate(-45deg);
+  }
+}
