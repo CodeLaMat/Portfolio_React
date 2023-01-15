@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import classes from "./SideMenu.module.scss";
 
-import Pdf from "../../assets/resume.pdf";
+import Pdf from "../../assets/Eyvaz_Alishov.pdf";
 
 const onResumeClick = () => {
   window.open(Pdf);
