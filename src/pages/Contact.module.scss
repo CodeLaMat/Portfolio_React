@@ -13,7 +13,7 @@
 
 .media_email {
   border: 1px solid v.$color-on-primary-text;
-  max-width: 50%;
+  max-width: 60%;
   padding: 0 20px;
 }
 
@@ -25,6 +25,7 @@
 }
 
 .form_input {
+  font-size: 1rem;
   color: v.$color-on-secondary-text;
   background-color: v.$color-secondary-background;
   box-shadow: 0 0 0.4vw v.$color-on-secondary-text, 0 0 0 0.15vw transparent;
@@ -42,6 +43,7 @@
 
 .form_input:focus {
   box-shadow: 0 0 0 0.15vw v.$color-on-primary-text;
+  background-color: v.$color-secondary-background;
 }
 
 .form_input::placeholder {
@@ -59,18 +61,16 @@
 
 .form_line {
   margin-top: 40px;
-
-  border: 0.5px solid;
-  border-color: v.$color-on-primary-text;
+  border: 0.1px transparent;
 }
 
 .footer_button {
   display: flex;
   border-radius: 3px;
   border: solid 1px v.$color-on-primary-text;
-  color: v.$color-on-primary-text;
+  background-color: v.$color-on-primary-text;
   font-size: 1vw;
   cursor: pointer;
   justify-content: center;
-  width: 98%;
+  width: 96%;
 }

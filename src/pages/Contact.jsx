@@ -1,31 +1,63 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import emailjs from "@emailjs/browser";
 import classes from "./Contact.module.scss";
-import { Link } from "react-router-dom";
 
-const ButtonMailto = ({ mailto, label }) => {
-  return (
-    <Link
-      type="button"
-      className={classes.footer_button}
-      to="#"
-      onClick={(e) => {
-        window.location.href = mailto;
-        e.preventDefault();
-      }}
-    >
-      {label}
-    </Link>
-  );
-};
+function reloadPage() {
+  window.location.reload();
+}
+
 const Contact = () => {
+  const form = useRef();
+  const [show, setShow] = useState(false);
+
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_b3richn",
+      "template_qlodssk",
+      form.current,
+      "pD9RVhlrClzkEGpaT"
+    );
+  };
+
   return (
     <div className={classes.contacts}>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Thank your for visiting my page</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Your message has been sent to me. I will get back soon.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button
+            variant="secondary"
+            onClick={() => {
+              handleClose();
+              reloadPage();
+            }}
+          >
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
       <div>
         <h2>Contact me</h2>
       </div>
       <div className={classes.contact_container}>
         <div className={classes.media_container}>
-          <h4>You can directly contact me at:</h4>
+          <p>You can directly contact me at:</p>
           <p className={classes.media_email}>eyvaz.alishov@gmail.com</p>
           <p>
             Or you can use any of these social media links shown below to get in
@@ -149,13 +181,17 @@ const Contact = () => {
           </div>
         </div>
         <hr className={classes.form_line}></hr>
-        <div className={classes.form_container}>
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className={classes.form_container}
+        >
           <p>You can also use this form to send me you message</p>
           <div className={classes.form_inputDiv}>
             <input
               className={classes.form_input}
               type="text"
-              name="name"
+              name="user_name"
               placeholder="Your name"
             />
           </div>
@@ -163,7 +199,7 @@ const Contact = () => {
             <input
               className={classes.form_input}
               type="email"
-              name="email"
+              name="user_email"
               placeholder="Your email"
             />
           </div>
@@ -174,11 +210,17 @@ const Contact = () => {
               placeholder="Write a message"
             ></textarea>
           </div>
-          <ButtonMailto
-            label="Send message"
-            mailto="mailto:eyvaz.alishov@gmail.com"
-          />
-        </div>
+          <div>
+            {" "}
+            <input
+              type="submit"
+              value="send"
+              className={classes.footer_button}
+              to="#"
+              onClick={handleShow}
+            />
+          </div>
+        </form>
       </div>
     </div>
   );

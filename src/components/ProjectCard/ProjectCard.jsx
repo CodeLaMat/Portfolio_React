@@ -13,7 +13,7 @@ export default function ProjectCard({
   description,
 }) {
   return (
-    <div className={classes.card}>
+    <div className={classes.card_container}>
       <header className={classes.card_header}>
         <div className={classes.card_top}>
           <div className={classes.folder}>
