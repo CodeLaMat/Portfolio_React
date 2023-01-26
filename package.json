@@ -5,7 +5,6 @@
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "animate-presence": "^0.2.1",
     "axios": "^1.2.2",
@@ -51,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/react": "^13.4.0",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
     "webpack": "^5.75.0"
