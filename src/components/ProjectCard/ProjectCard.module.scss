@@ -5,10 +5,10 @@
   @include v.title-large;
 
   margin: 10px;
-  min-width: 50px;
+  min-width: 40px;
   height: 350px;
   background-color: v.$color-on-primary-heading-text;
-  padding: 1.8rem;
+  padding: 1.6rem;
   justify-content: center;
   align-items: center;
   color: v.$color-primary-background;
@@ -80,4 +80,14 @@
   font-size: 14px;
   line-height: 1.75;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1300px) {
+  .project_description {
+    margin-top: 8%;
+    font-size: 0.9rem;
+    line-height: 1.1;
+  }
+  .card_container {
+  }
 }
