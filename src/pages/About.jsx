@@ -11,8 +11,8 @@ const About = () => {
         <h2>About me</h2>
         <p>
           {" "}
-          I'm an aspiring web developer with solid background in project
-          management and public administration. As a student of the,{" "}
+          I'm an aspiring full-stack web developer with solid background in
+          project management and public administration. As a student of the,{" "}
           <span>
             Full Stack Web Developer programme at Helsinki Business College
           </span>{" "}
@@ -38,7 +38,7 @@ const About = () => {
       </div>
       <div className={classes.imageAboutme}>
         <div className={classes.imageWrapper}>
-          <img className={classes.imgMe} src={myImage} alt="My picture" />
+          <img className={classes.imgMe} src={myImage} alt="eyvaz.alishov" />
         </div>
       </div>
     </div>

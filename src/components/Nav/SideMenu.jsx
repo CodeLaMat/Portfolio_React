@@ -1,8 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
 import classes from "./SideMenu.module.scss";
-
 import Pdf from "../../assets/CV_Alishov.pdf";
 
 const onResumeClick = () => {

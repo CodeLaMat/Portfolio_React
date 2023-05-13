@@ -53,18 +53,18 @@
 /* --------Side Email--------- */
 
 .eMailContainer {
-  width: 40px;
+  width: 30px;
   position: fixed;
   bottom: 100px;
-  left: 30px;
+  left: 5%;
   right: auto;
   z-index: 10;
   color: var(--secondary-text-color);
 }
 
 .eMail {
-  margin: 20px auto;
-  padding: 10px;
+  margin: 10px auto;
+  padding: 8px;
   font-family: var(--font);
   font-size: 12px;
   line-height: 22px;

@@ -1,11 +1,15 @@
 @use "../../../src/utilities/variables/" as v;
 
+.footer_container {
+  margin-top: 90px;
+}
+
 .footer {
   display: block;
   text-align: center;
   bottom: 0;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .copyright {
@@ -26,4 +30,8 @@
   width: 20px;
   margin: 0 5px;
   color: v.$color-on-secondary-text;
+}
+
+.line1 {
+  margin-left: 10%;
 }

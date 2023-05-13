@@ -2,7 +2,7 @@
 
 .skills {
   @include v.headline-medium;
-  min-height: 90vh;
+  min-height: 100vh;
   justify-content: center;
 }
 
@@ -11,18 +11,14 @@
   max-width: 80%;
 }
 
-.skills_group {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
-  gap: 5%;
-  padding: 20px;
-  align-items: center;
-  justify-items: center;
+.skills_inner path {
+  font-size: 1.2rem;
 }
 
 i {
   font-size: 3rem;
 }
+
 .skillsLine {
   text-align: center;
   margin-top: 3rem;
@@ -30,7 +26,7 @@ i {
 
 .skill_box {
   display: grid;
-  min-width: 10px;
+  min-width: 10%;
   background-color: v.$color-on-secondary-text;
   padding: 1rem;
   color: v.$color-primary-background;
@@ -57,6 +53,7 @@ i {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+
     .progressbar_complete {
       position: absolute;
       left: 0;
@@ -66,6 +63,7 @@ i {
       border-radius: 10px;
       animation: g 2500ms infinite ease-in-out;
       z-index: 2;
+
       .progressbar_liquid {
         z-index: -1;
         width: 90px;
@@ -79,6 +77,7 @@ i {
         border-radius: 40%;
       }
     }
+
     .progress {
       z-index: -1;
     }
@@ -103,5 +102,38 @@ i {
   }
   from {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .skills_group {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 3%;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 999px) {
+  .skills_group {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 3%;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .skills_group {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    gap: 5%;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
   }
 }

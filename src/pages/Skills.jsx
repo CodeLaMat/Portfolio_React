@@ -26,6 +26,81 @@ const Skills = () => {
           <div className={classes.container}>
             <div className={classes.skills_group}>
               <div className={classes.skill_box}>
+                <i class="fa-brands fa-firstdraft"></i>
+                <p>Typescript</p>
+                <div className={classes.bar_container}>
+                  <div className={classes.progressbar_container}>
+                    <div
+                      className={classes.progressbar_complete}
+                      style={{ width: 80 }}
+                    >
+                      <div className={classes.progressbar_liquid}></div>
+                    </div>
+                    <span className={classes.skill_barSpan}>80%</span>
+                  </div>
+                </div>
+              </div>
+              <div className={classes.skill_box}>
+                <i className="fa-brands fa-js"></i>
+                <p>JavaScript</p>
+                <div className={classes.bar_container}>
+                  <div className={classes.progressbar_container}>
+                    <div
+                      className={classes.progressbar_complete}
+                      style={{ width: 75 }}
+                    >
+                      <div className={classes.progressbar_liquid}></div>
+                    </div>
+                    <span className={classes.skill_barSpan}>75%</span>
+                  </div>
+                </div>
+              </div>{" "}
+              <div className={classes.skill_box}>
+                <i className="fa-brands fa-react"></i>
+                <p>React</p>
+                <div className={classes.bar_container}>
+                  <div className={classes.progressbar_container}>
+                    <div
+                      className={classes.progressbar_complete}
+                      style={{ width: 80 }}
+                    >
+                      <div className={classes.progressbar_liquid}></div>
+                    </div>
+                    <span className={classes.skill_barSpan}>80%</span>
+                  </div>
+                </div>
+              </div>
+              <div className={classes.skill_box}>
+                <i className="fa-brands fa-node-js"></i>
+                <p>Node-js</p>
+                <div className={classes.bar_container}>
+                  <div className={classes.progressbar_container}>
+                    <div
+                      className={classes.progressbar_complete}
+                      style={{ width: 550 }}
+                    >
+                      <div className={classes.progressbar_liquid}></div>
+                    </div>
+                    <span className={classes.skill_barSpan}>50%</span>
+                  </div>
+                </div>
+              </div>
+              <div className={classes.skill_box}>
+                <i class="fa-brands fa-docker"></i>
+                <p>Docker</p>
+                <div className={classes.bar_container}>
+                  <div className={classes.progressbar_container}>
+                    <div
+                      className={classes.progressbar_complete}
+                      style={{ width: 50 }}
+                    >
+                      <div className={classes.progressbar_liquid}></div>
+                    </div>
+                    <span className={classes.skill_barSpan}>50%</span>
+                  </div>
+                </div>
+              </div>
+              <div className={classes.skill_box}>
                 <i className="fa-brands fa-html5"></i>
                 <p>HTML5</p>
                 <div className={classes.bar_container}>
@@ -56,8 +131,7 @@ const Skills = () => {
                 </div>
               </div>
               <div className={classes.skill_box}>
-                <i className="fa-brands fa-js"></i>
-                <p>JavaScript</p>
+                <i class="fa-brands fa-bootstrap"></i> <p>Bootsrap</p>
                 <div className={classes.bar_container}>
                   <div className={classes.progressbar_container}>
                     <div
@@ -72,7 +146,22 @@ const Skills = () => {
               </div>
               <div className={classes.skill_box}>
                 <i className="fa-brands fa-react"></i>
-                <p>React</p>
+                <p>Redux</p>
+                <div className={classes.bar_container}>
+                  <div className={classes.progressbar_container}>
+                    <div
+                      className={classes.progressbar_complete}
+                      style={{ width: 70 }}
+                    >
+                      <div className={classes.progressbar_liquid}></div>
+                    </div>
+                    <span className={classes.skill_barSpan}>70%</span>
+                  </div>
+                </div>
+              </div>{" "}
+              <div className={classes.skill_box}>
+                <i className="fa-brands fa-jira"></i>
+                <p>Jira</p>
                 <div className={classes.bar_container}>
                   <div className={classes.progressbar_container}>
                     <div
@@ -82,21 +171,6 @@ const Skills = () => {
                       <div className={classes.progressbar_liquid}></div>
                     </div>
                     <span className={classes.skill_barSpan}>60%</span>
-                  </div>
-                </div>
-              </div>
-              <div className={classes.skill_box}>
-                <i className="fa-brands fa-node-js"></i>
-                <p>Node-js</p>
-                <div className={classes.bar_container}>
-                  <div className={classes.progressbar_container}>
-                    <div
-                      className={classes.progressbar_complete}
-                      style={{ width: 40 }}
-                    >
-                      <div className={classes.progressbar_liquid}></div>
-                    </div>
-                    <span className={classes.skill_barSpan}>40%</span>
                   </div>
                 </div>
               </div>
@@ -130,7 +204,6 @@ const Skills = () => {
                   </div>
                 </div>
               </div>
-
               <div className={classes.skill_box}>
                 <i className="fa-brands fa-git"></i>
                 <p>Git</p>

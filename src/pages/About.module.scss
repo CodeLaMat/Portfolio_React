@@ -2,12 +2,15 @@
 
 .aboutMe {
   @include v.headline-medium;
-
   display: grid;
   grid-template-columns: 8fr 1fr;
   min-height: 90vh;
   gap: 5%;
   justify-content: center;
+}
+.aboutMe p {
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 .imageAboutme {
@@ -18,7 +21,8 @@
   position: relative;
   border-radius: 30%;
   height: 20rem;
-  margin-right: 50px;
+  margin-right: 0;
+  margin-bottom: 20px;
   mix-blend-mode: multiply;
 }
 
@@ -28,4 +32,14 @@
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
     opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
     transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutMe {
+    grid-template-columns: 1fr;
+  }
+
+  .imgMe {
+    height: 15rem;
+  }
 }

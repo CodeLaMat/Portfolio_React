@@ -1,6 +1,6 @@
 import React from "react";
 import { ExternalLink } from "react-external-link";
-import { MDBFooter, MDBContainer, MDBIcon, MDBBtn } from "mdb-react-ui-kit";
+import { MDBFooter, MDBContainer } from "mdb-react-ui-kit";
 import {
   FaFacebook,
   FaGithub,
@@ -12,7 +12,7 @@ import classes from "./Footer.module.scss";
 
 const Footer = () => {
   return (
-    <div>
+    <div className={classes.footer_container}>
       <hr className={classes.line1} />
       <div className={classes.footer}>
         {" "}

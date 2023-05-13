@@ -1,7 +1,18 @@
 {
   "projects": [
     {
-      "id": 1,
+      "id": 81,
+      "date": "25.04.2023",
+      "title": "Dino's last word",
+      "github": "https://github.com/CodeLaMat/Dino-s_Last_Word_Game",
+      "description": "A simple Hangman-inspired game, except it's dinosaur vs. meteor. The game allows the user to guess a randomly generated word by entering letters one at a time.",
+      "external": "https://dino-game-guesting.onrender.com/",
+      "techs": ["React", "Node", "TS", "Firebase", "Jest", "Bootstrap"],
+      "company": "Business College Helsinki",
+      "showInProjects": true
+    },
+    {
+      "id": 8,
       "date": "16.12.2022",
       "title": "Habit Tracker",
       "github": "https://github.com/CodeLaMat/habit_tracker-Team_project.git",
@@ -56,7 +67,7 @@
       "showInProjects": true
     },
     {
-      "id": 5,
+      "id": 6,
       "date": "15.12.2022",
       "title": "Pokedex",
       "github": "https://github.com/CodeLaMat/Pokedex.git",
@@ -67,7 +78,7 @@
       "showInProjects": true
     },
     {
-      "id": 6,
+      "id": 7,
       "date": "31.11.2022",
       "title": "Speedgame",
       "github": "https://github.com/CodeLaMat/Speedgame.git",

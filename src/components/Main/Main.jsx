@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import classes from "./Main.module.css";
+import classes from "./Main.module.scss";
 import { Outlet } from "react-router-dom";
 
 export default class Main extends Component {
@@ -7,7 +7,6 @@ export default class Main extends Component {
     return (
       <main className={classes.main}>
         <Outlet />
-        {/* It is wehere we want to display the roots */}
       </main>
     );
   }
