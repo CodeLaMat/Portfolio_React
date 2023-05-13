@@ -7,8 +7,18 @@
 }
 
 .contact_container {
-  display: grid;
-  grid-template-columns: 2fr 0.5fr 2fr;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 881px) {
+  .contact_container {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 2fr;
+    gap: 20px;
+  }
 }
 
 .media_email {
