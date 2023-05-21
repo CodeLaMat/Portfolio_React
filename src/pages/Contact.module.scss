@@ -29,7 +29,7 @@
 
 .media_icons {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 10px;
   color: v.$color-on-primary-text;
 }

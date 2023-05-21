@@ -3,13 +3,15 @@
 .burger_sideMenu {
   list-style: none;
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
 
   li {
     padding: 12px 0px;
   }
   @media (max-width: 780px) {
-    flex-flow: column nowrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     background-color: v.$color-outline-dark;
     position: fixed;
     transform: translateX(100%);
@@ -25,17 +27,18 @@
 .sideMenu_open {
   list-style: none;
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
+
   li {
     padding: 18px 0;
     color: v.$color-primary-background;
   }
   @media (max-width: 780px) {
-    flex-flow: column nowrap;
+    flex-direction: column;
+
     background-color: v.$color-outline-dark;
     position: fixed;
     transform: translateX(0);
-
     top: 0;
     right: 0;
     height: 100vh;

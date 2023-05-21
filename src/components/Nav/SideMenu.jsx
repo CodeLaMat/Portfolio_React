@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./SideMenu.module.scss";
 import Pdf from "../../assets/CV_Alishov.pdf";
+import Button from "react-bootstrap/Button";
 
 const onResumeClick = () => {
   window.open(Pdf);
@@ -33,7 +34,9 @@ const RightNav = ({ menuOpen }) => {
         </li>
         <li classes={classes.resume_button}>
           <NavLink>
-            <a onClick={onResumeClick}>Resume</a>
+            <Button variant="light" onClick={onResumeClick}>
+              Resume
+            </Button>
           </NavLink>
         </li>
       </li>
