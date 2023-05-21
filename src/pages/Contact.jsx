@@ -214,7 +214,7 @@ const Contact = () => {
             {" "}
             <input
               type="submit"
-              value="send"
+              value="Send"
               className={classes.footer_button}
               to="#"
               onClick={handleShow}

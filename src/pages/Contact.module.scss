@@ -23,8 +23,8 @@
 
 .media_email {
   border: 1px solid v.$color-on-primary-text;
-  max-width: 60%;
-  padding: 0 20px;
+  width: 100%;
+  padding: 0 10px;
 }
 
 .media_icons {
@@ -79,7 +79,7 @@
   border-radius: 3px;
   border: solid 1px v.$color-on-primary-text;
   background-color: v.$color-on-primary-text;
-  font-size: 1vw;
+  font-size: 1.5rem;
   cursor: pointer;
   justify-content: center;
   width: 96%;

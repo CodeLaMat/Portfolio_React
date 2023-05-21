@@ -2,7 +2,6 @@
 
 .skills {
   @include v.headline-medium;
-  min-height: 100vh;
   justify-content: center;
 }
 
@@ -108,10 +107,9 @@ i {
 @media screen and (max-width: 700px) {
   .skills_group {
     display: grid;
-    grid-template-columns: 2fr;
-    gap: 3%;
-    padding: 20px;
-    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 0.2%;
+    padding: 10px;
     justify-items: center;
   }
 }
