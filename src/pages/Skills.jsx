@@ -76,7 +76,7 @@ const Skills = () => {
                 <div className={classes.progressbar_container}>
                   <div
                     className={classes.progressbar_complete}
-                    style={{ width: 550 }}
+                    style={{ width: 55 }}
                   >
                     <div className={classes.progressbar_liquid}></div>
                   </div>
