@@ -1,6 +1,14 @@
-@use "../../../src/utilities/variables/" as v;
+@use "../styles/utilities/variables" as v;
 
-/* --------------SKILLS------------- */
+.home_container {
+  height: 90vh;
+}
+
+@media only screen and (max-width: 700px) {
+  .home_container {
+    height: 100%;
+  }
+}
 
 .skills_inner {
   display: block;
@@ -36,7 +44,10 @@ progress[value]::-webkit-progress-bar {
 progress[value]::-webkit-progress-value {
   background: var(--primary-text-color);
   border-radius: 2px;
-  background-size: 35px 20px, 100% 100%, 100% 100%;
+  background-size:
+    35px 20px,
+    100% 100%,
+    100% 100%;
 }
 
 /* --------------SECTION PROJECTS--------------- */

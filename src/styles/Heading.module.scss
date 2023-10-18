@@ -1,8 +1,8 @@
-@use "../../../src/utilities/variables/" as v;
+@use "../styles/utilities/variables" as v;
 
 .heading {
   @include v.display-small;
-  height: auto;
+  height: 100%;
   overflow: hidden;
   background-color: v.$color-primary-background;
 }
@@ -41,8 +41,15 @@
   cursor: pointer;
   font-size: 0.8em;
 }
+.contact_button:hover {
+  background-color: v.$color-on-primary-text;
+  color: v.$color-primary-background;
+}
 
 @media screen and (max-width: 768px) {
+  .heading {
+    height: 100%;
+  }
   .welcomeText {
     font-size: 1.5em;
   }

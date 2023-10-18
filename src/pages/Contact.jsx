@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import emailjs from "@emailjs/browser";
-import classes from "./Contact.module.scss";
+import classes from "../styles/Contact.module.scss";
 
 function reloadPage() {
   window.location.reload();

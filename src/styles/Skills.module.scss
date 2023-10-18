@@ -1,4 +1,4 @@
-@use "../../src/utilities/variables/" as v;
+@use "../styles/utilities/variables" as v;
 
 .skills {
   @include v.headline-medium;
@@ -67,7 +67,8 @@ i {
         z-index: -1;
         width: 90px;
         height: 90px;
-        animation: g 4000ms infinite ease-in-out,
+        animation:
+          g 4000ms infinite ease-in-out,
           r 5000ms infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
         position: absolute;
         right: -5px;

@@ -1,10 +1,10 @@
 import React from "react";
 import Heading from "./Heading";
-import "./Home.module.scss";
+import classes from "../../styles/Home.module.scss";
 
 const Home = () => {
   return (
-    <main className="home">
+    <main className={classes.home_container}>
       <Heading />
     </main>
   );

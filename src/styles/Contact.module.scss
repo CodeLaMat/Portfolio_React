@@ -1,4 +1,4 @@
-@use "../../src/utilities/variables/" as v;
+@use "../styles/utilities/variables" as v;
 
 .contacts {
   @include v.headline-medium;
@@ -26,6 +26,12 @@
   width: 100%;
   padding: 0 10px;
 }
+@media screen and (max-width: 881px) {
+  .media_email {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
 
 .media_icons {
   display: flex;
@@ -38,7 +44,9 @@
   font-size: 1rem;
   color: v.$color-on-secondary-text;
   background-color: v.$color-secondary-background;
-  box-shadow: 0 0 0.4vw v.$color-on-secondary-text, 0 0 0 0.15vw transparent;
+  box-shadow:
+    0 0 0.4vw v.$color-on-secondary-text,
+    0 0 0 0.15vw transparent;
   border-radius: 0.2vw;
   border: none;
   outline: none;

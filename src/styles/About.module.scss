@@ -1,4 +1,4 @@
-@use "../../src/utilities/variables/" as v;
+@use "../styles/utilities/variables" as v;
 
 .aboutMe {
   @include v.headline-medium;
@@ -10,7 +10,8 @@
 }
 .aboutMe p {
   font-size: 1.1rem;
-  line-height: 1.5;
+  line-height: 1.8;
+  margin-bottom: 30px;
 }
 
 .imageAboutme {
@@ -29,7 +30,8 @@
 .imgMe:hover {
   mix-blend-mode: soft-light;
   transform: translateY(10%);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
+  transition:
+    all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
     opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
     transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }

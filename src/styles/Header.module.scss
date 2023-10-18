@@ -1,8 +1,9 @@
-@use "../../../src/utilities/variables/" as v;
+@use "../styles/utilities/variables" as v;
 
 .header_container {
   position: sticky;
   top: 0;
+  z-index: 5;
 }
 
 .header {
@@ -86,8 +87,12 @@
   width: 100%;
   margin-top: 10px;
   opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transition:
+    opacity 0.35s,
+    -webkit-transform 0.35s;
+  transition:
+    opacity 0.35s,
+    transform 0.35s;
 }
 
 .emailBox:before {

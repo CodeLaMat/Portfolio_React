@@ -8,7 +8,7 @@ import {
   FaInstagram,
   FaDiscord,
 } from "react-icons/fa";
-import classes from "./Footer.module.scss";
+import classes from "../../styles/Footer.module.scss";
 
 const Footer = () => {
   return (

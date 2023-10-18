@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ExternalLink } from "react-external-link";
 import Logo from "../../assets/photos/logoWB.png";
-import classes from "./Header.module.scss";
+import classes from "../../styles/Header.module.scss";
 import Nav from "../Nav/Nav";
 
 export default function Header() {

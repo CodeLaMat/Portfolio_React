@@ -1,8 +1,8 @@
-@use "../../src/utilities/variables/" as v;
+@use "../styles/utilities/variables" as v;
 
 .projects {
   @include v.headline-medium;
-  min-height: 90vh;
+  height: auto;
   justify-content: center;
 }
 

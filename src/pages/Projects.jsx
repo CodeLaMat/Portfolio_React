@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import classes from "./Projects.module.scss";
+import classes from "../styles/Projects.module.scss";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 
 const Projects = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.scss";
+import "./styles/App.scss";
 import Layout from "./pages/Layout";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor";
@@ -7,7 +7,7 @@ import Home from "./pages/Homepage/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
-import Galery from "./pages/Galery";
+import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 
 function App() {
@@ -15,11 +15,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <AnimatedCursor
-          innerSize={15}
+          innerSize={13}
           outerSize={5}
           color="86, 240, 212"
           outerAlpha={0.8}
-          innerScale={1.5}
+          innerScale={1.0}
           outerScale={0}
         />
         <Routes>
@@ -28,7 +28,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/galery" element={<Galery />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>

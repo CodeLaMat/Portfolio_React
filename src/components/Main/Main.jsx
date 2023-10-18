@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import classes from "./Main.module.scss";
+import classes from "../../styles/Main.module.scss";
 import { Outlet } from "react-router-dom";
 
 export default class Main extends Component {

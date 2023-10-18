@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Skills.module.scss";
+import classes from "../styles/Skills.module.scss";
 
 const Skills = () => {
   return (
@@ -7,9 +7,9 @@ const Skills = () => {
       <h2>Skills</h2>
       <div className={classes.skills_inner}>
         <p>
-          As an{" "}
+          As a{" "}
           <em>
-            <span>entry level software developer </span>
+            <span>junior software developer </span>
           </em>{" "}
           I am eager to apply my skills and knowledge to real-world projects and
           am looking for opportunities to gain practical experience in the
