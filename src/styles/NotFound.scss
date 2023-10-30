@@ -1,0 +1,7 @@
+@use "../styles/utilities/variables" as v;
+
+.errorPage {
+  @include v.headline-medium;
+  min-height: 55vh;
+  justify-content: center;
+}

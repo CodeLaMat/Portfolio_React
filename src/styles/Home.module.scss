@@ -1,53 +1,13 @@
 @use "../styles/utilities/variables" as v;
 
 .home_container {
-  height: 90vh;
+  height: 80vh;
 }
 
 @media only screen and (max-width: 700px) {
   .home_container {
     height: 100%;
   }
-}
-
-.skills_inner {
-  display: block;
-  width: 80%;
-}
-
-#skillsLine .skills_group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center;
-  margin-top: 5rem;
-}
-
-.skill {
-  background-color: var(--lighter-text-color);
-  padding: 2rem;
-  border: 1px solid var(--primary-text-color);
-}
-
-progress[value] {
-  height: 1 rem;
-  -webkit-appearance: none;
-  appearance: none;
-  background: transparent;
-}
-
-progress[value]::-webkit-progress-bar {
-  background-color: var(--secondary-text-color);
-  border-radius: 2px;
-}
-
-progress[value]::-webkit-progress-value {
-  background: var(--primary-text-color);
-  border-radius: 2px;
-  background-size:
-    35px 20px,
-    100% 100%,
-    100% 100%;
 }
 
 /* --------------SECTION PROJECTS--------------- */

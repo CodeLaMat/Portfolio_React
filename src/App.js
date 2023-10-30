@@ -9,6 +9,7 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>
