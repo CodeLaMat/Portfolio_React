@@ -44,10 +44,12 @@
     width: 130px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
+    z-index: 4;
   }
 }
 
 .resume_button {
+  padding-right: 10px;
   background-color: aliceblue;
   border: 2px solid v.$color-on-primary-text;
   border-radius: 5px;
