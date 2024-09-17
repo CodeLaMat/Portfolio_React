@@ -29,7 +29,7 @@
 }
 
 .projectsTable tr:nth-child(even) {
-  background-color: #ffffffe1;
+  background-color: #ffffff10;
 }
 
 .actionButton {
@@ -42,6 +42,7 @@
   border-radius: 4px;
   font-size: 14px;
   text-align: center;
+  cursor: pointer;
 }
 
 .actionButton:hover {

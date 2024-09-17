@@ -164,11 +164,11 @@
       "id": 13,
       "name": "7th Internet Governance Forum",
       "category": "project-management",
-      "description": " As the project manager, I led the IT support for the Forum organized by the United Nations in Baku, Azerbaijan, from November 5-9, 2012. The forum was expected to host over 2,000 physical attendees and tens of thousands of online participants. Our main task was to provide technical equipment and computer systems to support online broadcasting, sound management, and interactive participation for sessions held simultaneously in over 12 meeting rooms in more than 10 languages, based on UN's technical requirements. W assembled a team of approximately 40 specialists and 30 volunteers to ensure the event's success. The technical support was successfully implemented, and I was awarded a certificate by the United Nations for our efforts.",
+      "description": " As the project manager, I led the IT support for the Forum organized by the United Nations in Baku, Azerbaijan, from November 5-9, 2012. The forum was expected to host over 2,000 physical attendees and tens of thousands of online participants. Our main task was to provide technical equipment and computer systems to support online broadcasting, sound management, and interactive participation for sessions held simultaneously in over 12 meeting rooms in more than 10 languages, based on UN's technical requirements. We assembled a team of approximately 40 specialists and 30 volunteers to ensure the event's success. The technical support was successfully implemented, and I was awarded a certificate by the United Nations for our efforts.",
       "role": "Project manager",
       "date": "2012",
       "budget": "200.000 EUR",
-      "pdfFileName": "certificate_un.pdf",
+      "external": "certificate_un.pdf",
       "showInProjects": true
     },
     {
@@ -179,7 +179,18 @@
       "role": "Project coordinator",
       "date": "2010-2014",
       "budget": "15 mln EUR",
-      "pdfFileName": "",
+      "external": "",
+      "showInProjects": true
+    },
+    {
+      "id": 15,
+      "name": "Registry of Information Systems Containing Personal Data",
+      "category": "project-management",
+      "description": "In 2013, as the Product Owner and Project Manager appointed by the Ministry of Communication and IT, I spearheaded the development of a comprehensive registry for Information Systems containing personal data. The project was mandated to comply fully with all legal acts regarding personal data protection. My responsibilities included defining the product vision, managing the product backlog, and collaborating closely with cross-functional teams to ensure the system met all regulatory and compliance requirements. The system was successfully developed by the selected vendor and was delivered to the Ministry on time, fulfilling all contractual obligations and quality standards.",
+      "role": "Product Owner/Project Manager",
+      "date": "2013",
+      "budget": "350,000 EUR",
+      "external": "https://governmentsregistry.rabita.az/AcceptedFormPrivate.aspx",
       "showInProjects": true
     }
   ]

@@ -5,8 +5,16 @@ import classes from "../styles/ProjectManagementProjects.module.scss";
 const ProjectManagementProjects = () => {
   const [pmProjects, setPmProjects] = useState([]);
 
-  const onPdfClick = (Pdf) => {
-    window.open(Pdf);
+  const onPdfClick = (externalURL) => {
+    let url = externalURL;
+
+    // Check if external starts with 'http://' or 'https://'
+    if (!/^https?:\/\//i.test(externalURL)) {
+      // It's a local file name; construct the local URL
+      url = `/pdf/${externalURL}`;
+    }
+
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   useEffect(() => {
@@ -28,7 +36,7 @@ const ProjectManagementProjects = () => {
 
   return (
     <div className={classes.pmProjects}>
-      <h2>Managed Projects or Projects I was involved closely</h2>
+      <h2>Managed Projects or Projects I Was Involved Closely</h2>
       <table className={classes.projectsTable}>
         <thead>
           <tr>
@@ -38,7 +46,7 @@ const ProjectManagementProjects = () => {
             <th>Role</th>
             <th>Date</th>
             <th>Budget</th>
-            <th>Action</th>{" "}
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -51,17 +59,15 @@ const ProjectManagementProjects = () => {
               <td>{project.date}</td>
               <td>{project.budget}</td>
               <td>
-                {project.pdfFileName !== "" ? (
+                {project.external !== "" ? (
                   <p
-                    onClick={() => onPdfClick(`/pdf/${project.pdfFileName}`)}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    onClick={() => onPdfClick(project.external)}
                     className={classes.actionButton}
                   >
                     View
                   </p>
                 ) : null}
-              </td>{" "}
+              </td>
             </tr>
           ))}
         </tbody>

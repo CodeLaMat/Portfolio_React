@@ -44,7 +44,7 @@ const Footer = () => {
             </section>
           </MDBContainer>
           <div className={classes.copyright}>
-            © 2022 Copyright: Eyvaz Alishov
+            © 2024 Copyright: Eyvaz Alishov
           </div>
         </MDBFooter>
       </div>
