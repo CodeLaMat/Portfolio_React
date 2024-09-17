@@ -13,7 +13,7 @@ const ProjectManagementProjects = () => {
     // Check if external starts with 'http://' or 'https://'
     if (!/^https?:\/\//i.test(externalURL)) {
       // It's a local file name; construct the local URL
-      url = `/pdf/${externalURL}`;
+      url = `/certificates/${externalURL}`;
     }
 
     window.open(url, "_blank", "noopener,noreferrer");

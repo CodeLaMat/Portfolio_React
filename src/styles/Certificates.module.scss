@@ -1,0 +1,122 @@
+@use "../styles/utilities/variables" as v;
+
+.certificates {
+  @include v.headline-medium;
+  justify-content: center;
+}
+
+.certificates_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.certificateContainer {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certificateCard {
+  background-color: v.$color-on-primary-light;
+  color: v.$color-primary-background;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  height: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .certificateThumbnail,
+  .thumbnail {
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .certificateThumbnail {
+    object-fit: cover;
+  }
+  .pdfIcon {
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .thumbnail {
+    background-color: v.$color-secondary-background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      color: v.$color-primary-background;
+      margin-top: 10px;
+      text-align: center;
+      padding: 0 10px;
+    }
+  }
+
+  .certificateInfo {
+    padding: 15px;
+    color: v.$color-on-secondary-text;
+    line-height: 1rem;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 5px;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+  .modalContent {
+    position: relative;
+
+    width: 90%;
+    height: 90%;
+
+    .closeButton {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+      cursor: pointer;
+    }
+
+    .pdfViewer {
+      width: 100%;
+      height: 100%;
+    }
+    .fullImage {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .certificateCard {
+    width: 100%;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "../styles/Skills.module.scss";
-import skillsData from "../skillsData";
+import skillsData from "../assets/data/skillsData";
 
 const Skills = () => {
   return (

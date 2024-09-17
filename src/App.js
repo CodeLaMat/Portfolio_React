@@ -9,6 +9,7 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import Certificates from "./components/Certificates";
 import NotFound from "./pages/NotFound";
 import ProjectManagementProjects from "./pages/ProjectManagementProjects";
 import FullStackProjects from "./pages/FullStackProjects";
@@ -31,6 +32,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/certificates" element={<Certificates />} />
+
             <Route
               path="/projects/project-management"
               element={<ProjectManagementProjects />}

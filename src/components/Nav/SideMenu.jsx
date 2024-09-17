@@ -4,7 +4,7 @@ import classes from "./SideMenu.module.scss";
 import Button from "react-bootstrap/Button";
 
 const onResumeClick = () => {
-  window.open("/pdf/CV_Alishov.pdf", "_blank", "noopener,noreferrer");
+  window.open("/certificates/CV_Alishov.pdf", "_blank", "noopener,noreferrer");
 };
 
 const RightNav = ({ menuOpen }) => {
@@ -26,6 +26,10 @@ const RightNav = ({ menuOpen }) => {
         <li>
           {" "}
           <NavLink to="/projects">Projects</NavLink>
+        </li>
+        <li>
+          {" "}
+          <NavLink to="/certificates">Certificates</NavLink>
         </li>
         <li>
           {" "}
