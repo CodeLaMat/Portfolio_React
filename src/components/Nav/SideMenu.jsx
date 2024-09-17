@@ -1,11 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./SideMenu.module.scss";
-import Pdf from "../../assets/CV_Alishov.pdf";
 import Button from "react-bootstrap/Button";
 
 const onResumeClick = () => {
-  window.open(Pdf);
+  window.open("/pdf/CV_Alishov.pdf", "_blank", "noopener,noreferrer");
 };
 
 const RightNav = ({ menuOpen }) => {

@@ -1,5 +1,5 @@
 import React from "react";
-import myImage from "../assets/photos/DSCF2387.png";
+import myImage from "../assets/photos/20240426-20240426.jpg";
 
 import classes from "../styles/About.module.scss";
 
@@ -7,37 +7,70 @@ const About = () => {
   return (
     <div className={classes.aboutMe}>
       <div>
-        {" "}
         <h2>About Me</h2>
         <p>
-          I'm an aspiring junior full-stack software developer with a solid
-          background in project management and public administration. I'm
-          currently enrolled in the{" "}
+          I am an ICT professional with over seven years of experience in{" "}
+          <span>ICT project management </span>and about three years of
+          experience in <span>software development</span>. My career began in
+          Azerbaijan, where I worked on national digital transformation
+          projects, managing large-scale ICT initiatives in the public sector.
+          Later, I moved to Finland and focused on technical project management
+          and software development. I also established my own company in
+          Germany, where I served as Managing Director more than three years.
+          I'm a citizen of Finland and Azerbaijan.
+        </p>{" "}
+        <p>
+          At <span>Virittämö</span>, the employment service of the City of
+          Helsinki, I worked as a full-stack developer. In this role, I
+          developed and maintained applications, collaborated with teams to
+          improve performance, and implemented authentication systems and CI/CD
+          practices to optimize deployment efficiency. I was also responsible
+          for preparing well-structured documentation for various projects.
+          During my time at Virittämö, I noticed that project documentation was
+          scattered across various resources, making it difficult to update and
+          manage. Recognizing this challenge, I took the initiative to develop a
+          software tool dedicated to each ongoing project. This centralized all
+          resources and significantly improved project management. The tool
+          quickly became essential to the team's workflow, showcasing my ability
+          to identify problems and implement practical solutions.
+        </p>
+        <p>
+          My technical skill set includes a range of languages and frameworks,
+          such as{" "}
           <span>
-            Full Stack Web Developer program at Helsinki Business College
+            HTML, CSS/SCSS, TypeScript, JavaScript, Node.js (Express, Morgan),
+            React (Next.js, Redux, Axios, Bootstrap, MUI), Vue.js (Nuxt.js,
+            Quasar), Docker, Jest, MongoDB, Firebase, Git, AWS (EC2,
+            CodeCommit), and CI/CD (Jenkins).
           </span>{" "}
-          and will be graduating by the end of this year. In addition to my
-          academic pursuits, I'm gaining hands-on experience in the field as I
-          work as a full-stack web developer intern at Kyky Today in Helsinki.
+          I leverage these technologies to build user-centric, efficient
+          solutions.
+        </p>{" "}
+        <p>
+          I have experience leading teams in <span>Agile </span>and{" "}
+          <span>Scrum </span>environments, focusing on iterative development,
+          sprint planning, and backlog management. My project management
+          expertise includes project scoping, risk assessment, resource
+          allocation, and maintaining alignment with key performance indicators
+          (KPIs) and business objectives. I have managed national-scale
+          projects, been involved in the review and preparation of ICT-related
+          legal acts, and served as a member of the EU-Azerbaijan Sub-committee
+          on Justice, Security, Human Rights, and Democracy.
         </p>
         <p>
-          My experience spans a range of languages and frameworks, including{" "}
-          <span>
-            HTML, CSS/SCSS, TypeScript, JavaScript, Node.js (Morgan & Express),
-            React (Redux SMT, Axios, Bootstrap, MUI), Docker, Jest, MongoDB,
-            Firebase, Git version control, AWS (EC2, CodeCommit), CI/CD
-            (Jenkins), UI/UX, and Adobe Creative Suite (Illustrator, Photoshop)
-          </span>
-          . I've actively contributed to web application projects showcasing my
-          proficiency in these areas.
+          I am proficient in collaboration and project management tools like{" "}
+          <span>Figma</span>, <span>Trello</span>, <span>Jira</span>, and{" "}
+          <span>Miro</span>, which help streamline workflows and enhance team
+          productivity. Being fluent in several languages—including{" "}
+          <span>Finnish, English, Turkish, and Russian</span>—allows me to work
+          effectively in diverse teams.
         </p>
         <p>
-          In my previous team projects, I've gained valuable experience working
-          within an <span>Agile</span> environment. This experience has
-          emphasized the importance of teamwork, effective communication, and
-          adaptability. I've also utilized collaboration tools like{" "}
-          <span>Figma</span>, <span>Trello</span>, and <span>Jira</span> to
-          streamline project management and enhance collaboration with my team.
+          My combined expertise in software development and project management
+          enables me to approach projects with a strategic mindset, ensuring
+          technical solutions align with operational efficiency and business
+          goals. I thrive on tackling challenges and continuously strive to
+          improve processes within the teams I work with.
         </p>
       </div>
       <div className={classes.imageAboutme}>

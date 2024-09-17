@@ -10,6 +10,8 @@ import Projects from "./pages/Projects";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import ProjectManagementProjects from "./pages/ProjectManagementProjects";
+import FullStackProjects from "./pages/FullStackProjects";
 
 function App() {
   return (
@@ -29,6 +31,14 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
+            <Route
+              path="/projects/project-management"
+              element={<ProjectManagementProjects />}
+            />
+            <Route
+              path="/projects/full-stack"
+              element={<FullStackProjects />}
+            />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />

@@ -1,57 +1,21 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+// src/pages/Projects.jsx
+
+import React from "react";
 import classes from "../styles/Projects.module.scss";
-import ProjectCard from "../components/ProjectCard/ProjectCard";
+import ProjectCategories from "../components/ProjectCategories/ProjectCategories";
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("https://eyvaz-alishov-default-rtdb.firebaseio.com/projects.json")
-      .then((response) => setProjects(response.data));
-  }, []);
-
-  console.log(projects);
-
   return (
     <div className={classes.projects}>
-      <div>
-        <h2>Projects</h2>
-      </div>
+      <h2>Projects</h2>
       <div className={classes.projects_inner}>
         <p>
-          I'm excited to share with you some of the projects I've been working
-          on. From web development to data structures, I enjoy tackling a wide
-          range of challenges and technologies. This page features a selection
-          of my most recent and noteworthy projects. I worked on these projects
-          as a part of my tasks in Full Stack Web Developer programme at
-          Helsinki Business College. Although some of the projects seems to be
-          incomplete, the task itself is completed.
-        </p>
-        <p>
-          Click on a project to see more details and learn more about my
-          experience and skills. You can check both live links and github links.
+          Welcome to my projects page! Here, you can explore my work both as a
+          Project Manager and a Full Stack Developer. Click on a category below
+          to see more details about my projects.
         </p>
       </div>
-      <div className={classes.projects_container}>
-        {projects &&
-          projects.map((project) => (
-            <ProjectCard
-              projects={projects}
-              key={project.id}
-              id={project.id}
-              title={project.title}
-              github={project.github}
-              external={project.external}
-              date={project.date}
-              techs={project.techs}
-              company={project.company}
-              showInProjects={project.showInProjects}
-              description={project.description}
-            ></ProjectCard>
-          ))}
-      </div>
+      <ProjectCategories />
     </div>
   );
 };

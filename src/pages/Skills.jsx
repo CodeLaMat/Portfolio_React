@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "../styles/Skills.module.scss";
+import skillsData from "../skillsData";
 
 const Skills = () => {
   return (
@@ -9,246 +10,45 @@ const Skills = () => {
         <p>
           As a{" "}
           <em>
-            <span>junior software developer </span>
-          </em>{" "}
-          I am eager to apply my skills and knowledge to real-world projects and
-          am looking for opportunities to gain practical experience in the
-          field. I am a proactive learner and am always looking for ways to
-          improve my skills and stay up-to-date on the latest developments in
-          web development. I am excited to contribute my skills and passion to a
-          company that values innovation and creativity.
+            <span>software developer</span>
+          </em>
+          , I bring a strong foundation in web development and a drive to work
+          on impactful projects. I am constantly learning and refining my skills
+          to stay current with the latest trends in the industry. My proactive
+          approach and passion for technology make me eager to contribute to
+          innovative and creative teams.
         </p>
-        <p>Here are a few I've been working with recently:</p>
+        <p>
+          Here are some of the technologies I've been working with recently:
+        </p>
       </div>
 
       <div className={classes.skillsLine}>
         <div className={classes.container}>
-          <div className={classes.skills_group}>
-            <div className={classes.skill_box}>
-              <i class="fa-brands fa-firstdraft"></i>
-              <p>Typescript</p>
-              <div className={classes.bar_container}>
-                <div className={classes.progressbar_container}>
-                  <div
-                    className={classes.progressbar_complete}
-                    style={{ width: 80 }}
-                  >
-                    <div className={classes.progressbar_liquid}></div>
+          {skillsData.map((categoryData, categoryIndex) => (
+            <div key={categoryIndex} className={classes.skills_group}>
+              <h3>{categoryData.category}</h3>
+              {categoryData.skills.map((skill, skillIndex) => (
+                <div key={skillIndex} className={classes.skill_box}>
+                  <skill.Icon className={classes.icon} />
+                  <p>{skill.name}</p>
+                  <div className={classes.bar_container}>
+                    <div className={classes.progressbar_container}>
+                      <div
+                        className={classes.progressbar_complete}
+                        style={{ width: `${skill.proficiency}%` }}
+                      >
+                        <div className={classes.progressbar_liquid}></div>
+                      </div>
+                      <span className={classes.skill_barSpan}>
+                        {skill.proficiency}%
+                      </span>
+                    </div>
                   </div>
-                  <span className={classes.skill_barSpan}>80%</span>
                 </div>
-              </div>
+              ))}
             </div>
-            <div className={classes.skill_box}>
-              <i className="fa-brands fa-js"></i>
-              <p>JavaScript</p>
-              <div className={classes.bar_container}>
-                <div className={classes.progressbar_container}>
-                  <div
-                    className={classes.progressbar_complete}
-                    style={{ width: 75 }}
-                  >
-                    <div className={classes.progressbar_liquid}></div>
-                  </div>
-                  <span className={classes.skill_barSpan}>75%</span>
-                </div>
-              </div>
-            </div>{" "}
-            <div className={classes.skill_box}>
-              <i className="fa-brands fa-react"></i>
-              <p>React</p>
-              <div className={classes.bar_container}>
-                <div className={classes.progressbar_container}>
-                  <div
-                    className={classes.progressbar_complete}
-                    style={{ width: 80 }}
-                  >
-                    <div className={classes.progressbar_liquid}></div>
-                  </div>
-                  <span className={classes.skill_barSpan}>80%</span>
-                </div>
-              </div>
-            </div>
-            <div className={classes.skill_box}>
-              <i className="fa-brands fa-node-js"></i>
-              <p>Node-js</p>
-              <div className={classes.bar_container}>
-                <div className={classes.progressbar_container}>
-                  <div
-                    className={classes.progressbar_complete}
-                    style={{ width: 55 }}
-                  >
-                    <div className={classes.progressbar_liquid}></div>
-                  </div>
-                  <span className={classes.skill_barSpan}>50%</span>
-                </div>
-              </div>
-            </div>
-            <div className={classes.skill_box}>
-              <i class="fa-brands fa-docker"></i>
-              <p>Docker</p>
-              <div className={classes.bar_container}>
-                <div className={classes.progressbar_container}>
-                  <div
-                    className={classes.progressbar_complete}
-                    style={{ width: 50 }}
-                  >
-                    <div className={classes.progressbar_liquid}></div>
-                  </div>
-                  <span className={classes.skill_barSpan}>50%</span>
-                </div>
-              </div>
-            </div>
-            <div className={classes.skill_box}>
-              <i className="fa-brands fa-html5"></i>
-              <p>HTML5</p>
-              <div className={classes.bar_container}>
-                <div className={classes.progressbar_container}>
-                  <div
-                    className={classes.progressbar_complete}
-                    style={{ width: 80 }}
-                  >
-                    <div className={classes.progressbar_liquid}></div>
-                  </div>
-                  <span className={classes.skill_barSpan}>80%</span>
-                </div>
-              </div>
-            </div>
-            <div className={classes.skill_box}>
-              <i className="fa-brands fa-css3"></i>
-              <p>CSS3</p>
-              <div className={classes.bar_container}>
-                <div className={classes.progressbar_container}>
-                  <div
-                    className={classes.progressbar_complete}
-                    style={{ width: 70 }}
-                  >
-                    <div className={classes.progressbar_liquid}></div>
-                  </div>
-                  <span className={classes.skill_barSpan}>70%</span>
-                </div>
-              </div>
-            </div>
-            <div className={classes.skill_box}>
-              <i class="fa-brands fa-bootstrap"></i> <p>Bootsrap</p>
-              <div className={classes.bar_container}>
-                <div className={classes.progressbar_container}>
-                  <div
-                    className={classes.progressbar_complete}
-                    style={{ width: 60 }}
-                  >
-                    <div className={classes.progressbar_liquid}></div>
-                  </div>
-                  <span className={classes.skill_barSpan}>60%</span>
-                </div>
-              </div>
-            </div>
-            <div className={classes.skill_box}>
-              <i className="fa-brands fa-react"></i>
-              <p>Redux</p>
-              <div className={classes.bar_container}>
-                <div className={classes.progressbar_container}>
-                  <div
-                    className={classes.progressbar_complete}
-                    style={{ width: 70 }}
-                  >
-                    <div className={classes.progressbar_liquid}></div>
-                  </div>
-                  <span className={classes.skill_barSpan}>70%</span>
-                </div>
-              </div>
-            </div>{" "}
-            <div className={classes.skill_box}>
-              <i className="fa-brands fa-jira"></i>
-              <p>Jira</p>
-              <div className={classes.bar_container}>
-                <div className={classes.progressbar_container}>
-                  <div
-                    className={classes.progressbar_complete}
-                    style={{ width: 60 }}
-                  >
-                    <div className={classes.progressbar_liquid}></div>
-                  </div>
-                  <span className={classes.skill_barSpan}>60%</span>
-                </div>
-              </div>
-            </div>
-            <div className={classes.skill_box}>
-              <i className="fa-brands fa-figma"></i>
-              <p>Figma</p>
-              <div className={classes.bar_container}>
-                <div className={classes.progressbar_container}>
-                  <div
-                    className={classes.progressbar_complete}
-                    style={{ width: 50 }}
-                  >
-                    <div className={classes.progressbar_liquid}></div>
-                  </div>
-                  <span className={classes.skill_barSpan}>50%</span>
-                </div>
-              </div>
-            </div>
-            <div className={classes.skill_box}>
-              <i className="fa-brands fa-trello"></i>
-              <p>Trello</p>
-              <div className={classes.bar_container}>
-                <div className={classes.progressbar_container}>
-                  <div
-                    className={classes.progressbar_complete}
-                    style={{ width: 60 }}
-                  >
-                    <div className={classes.progressbar_liquid}></div>
-                  </div>
-                  <span className={classes.skill_barSpan}>60%</span>
-                </div>
-              </div>
-            </div>
-            <div className={classes.skill_box}>
-              <i className="fa-brands fa-git"></i>
-              <p>Git</p>
-              <div className={classes.bar_container}>
-                <div className={classes.progressbar_container}>
-                  <div
-                    className={classes.progressbar_complete}
-                    style={{ width: 60 }}
-                  >
-                    <div className={classes.progressbar_liquid}></div>
-                  </div>
-                  <span className={classes.skill_barSpan}>60%</span>
-                </div>
-              </div>
-            </div>
-            <div className={classes.skill_box}>
-              <i className="fa-brands fa-bitbucket"></i>
-              <p>Bitbucket</p>
-              <div className={classes.bar_container}>
-                <div className={classes.progressbar_container}>
-                  <div
-                    className={classes.progressbar_complete}
-                    style={{ width: 60 }}
-                  >
-                    <div className={classes.progressbar_liquid}></div>
-                  </div>
-                  <span className={classes.skill_barSpan}>60%</span>
-                </div>
-              </div>
-            </div>
-            <div className={classes.skill_box}>
-              <i className="fa-brands fa-uikit"></i>
-              <p>UIKit</p>
-              <div className={classes.bar_container}>
-                <div className={classes.progressbar_container}>
-                  <div
-                    className={classes.progressbar_complete}
-                    style={{ width: 40 }}
-                  >
-                    <div className={classes.progressbar_liquid}></div>
-                  </div>
-                  <span className={classes.skill_barSpan}>40%</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

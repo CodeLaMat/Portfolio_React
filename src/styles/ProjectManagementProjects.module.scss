@@ -1,0 +1,61 @@
+@use "../styles/utilities/variables" as v;
+
+.pmProjects {
+  @include v.headline-medium;
+  justify-content: center;
+}
+
+.pmProjects h2 {
+  margin-bottom: 20px;
+}
+
+.projectsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: small;
+  line-height: 1.5rem;
+}
+
+.projectsTable th,
+.projectsTable td {
+  border: 1px solid v.$color-on-primary-text;
+  padding: 10px;
+}
+
+.projectsTable th {
+  background-color: #ffffff;
+  color: v.$color-primary-background;
+  text-align: left;
+}
+
+.projectsTable tr:nth-child(even) {
+  background-color: #ffffffe1;
+}
+
+.actionButton {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #007bff;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.actionButton:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
