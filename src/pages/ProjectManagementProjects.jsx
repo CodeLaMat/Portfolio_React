@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import classes from "../styles/ProjectManagementProjects.module.scss";
+import Loading from "../components/Loading";
 
 const ProjectManagementProjects = () => {
   const [pmProjects, setPmProjects] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const onPdfClick = (externalURL) => {
     let url = externalURL;
@@ -28,6 +30,7 @@ const ProjectManagementProjects = () => {
           (project) => project.category === "project-management"
         );
         setPmProjects(projectManagementProjects);
+        setIsLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching projects:", error);
@@ -37,41 +40,45 @@ const ProjectManagementProjects = () => {
   return (
     <div className={classes.pmProjects}>
       <h2>Managed Projects or Projects I Was Involved Closely</h2>
-      <table className={classes.projectsTable}>
-        <thead>
-          <tr>
-            <th>N</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Role</th>
-            <th>Date</th>
-            <th>Budget</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {pmProjects.map((project, index) => (
-            <tr key={project.id}>
-              <td>{index + 1}</td>
-              <td>{project.name}</td>
-              <td>{project.description}</td>
-              <td>{project.role}</td>
-              <td>{project.date}</td>
-              <td>{project.budget}</td>
-              <td>
-                {project.external !== "" ? (
-                  <p
-                    onClick={() => onPdfClick(project.external)}
-                    className={classes.actionButton}
-                  >
-                    View
-                  </p>
-                ) : null}
-              </td>
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <table className={classes.projectsTable}>
+          <thead>
+            <tr>
+              <th>N</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Role</th>
+              <th>Date</th>
+              <th>Budget</th>
+              <th>Action</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {pmProjects.map((project, index) => (
+              <tr key={project.id}>
+                <td>{index + 1}</td>
+                <td>{project.name}</td>
+                <td>{project.description}</td>
+                <td>{project.role}</td>
+                <td>{project.date}</td>
+                <td>{project.budget}</td>
+                <td>
+                  {project.external !== "" ? (
+                    <p
+                      onClick={() => onPdfClick(project.external)}
+                      className={classes.actionButton}
+                    >
+                      View
+                    </p>
+                  ) : null}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import classes from "../styles/FullStackProjects.module.scss";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
+import Loading from "../components/Loading";
 
 const FullStackProjects = () => {
   const [projects, setProjects] = useState([]);
@@ -18,7 +19,9 @@ const FullStackProjects = () => {
         );
         setProjects(fullStackProjects);
         setIsLoading(false);
-        console.log("Full stack projects: " + fullStackProjects);
+      })
+      .catch((error) => {
+        console.error("Error fetching projects:", error);
       });
   }, []);
 
@@ -26,7 +29,7 @@ const FullStackProjects = () => {
     <div className={classes.fsProjects}>
       <h2>Full Stack Development Projects</h2>
       {isLoading ? (
-        <p>Loading projects...</p>
+        <Loading />
       ) : (
         <div className={classes.projects_container}>
           {projects.map((project) => (
