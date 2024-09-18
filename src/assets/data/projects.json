@@ -39,7 +39,7 @@
       "category": "full-stack",
       "github": "",
       "description": "The Kyky Web Application is a platform designed to connect freelancers with potential clients. It serves as a marketplace for a wide range of services, catering to both freelancers seeking to offer their services and clients in need of these services.",
-      "external": "kyky-today.web.app",
+      "external": "https://kyky-today.web.app",
       "techs": ["React", "JS", "Firebase", "Bootstrap"],
       "company": "Kyky Today",
       "showInProjects": true
