@@ -35,6 +35,8 @@ const Contact = () => {
         form.current,
         "pD9RVhlrClzkEGpaT"
       );
+      //result will be used in toast
+      console.log("Email successfully sent!", result.text);
       handleShow();
     } catch (error) {
       handleError(error);
