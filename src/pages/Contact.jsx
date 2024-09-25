@@ -15,15 +15,31 @@ const Contact = () => {
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
 
-  const sendEmail = (e) => {
+  function handleError(error) {
+    console.error("Error:", error);
+
+    if (error.message) {
+      alert("An error occurred: " + error.message);
+    } else {
+      alert("An error occurred: " + JSON.stringify(error, null, 2));
+    }
+  }
+
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_b3richn",
-      "template_qlodssk",
-      form.current,
-      "pD9RVhlrClzkEGpaT"
-    );
+    try {
+      const result = await emailjs.sendForm(
+        "service_b3richn",
+        "template_qlodssk",
+        form.current,
+        "pD9RVhlrClzkEGpaT"
+      );
+      console.log("Email successfully sent!", result.text);
+      handleShow();
+    } catch (error) {
+      handleError(error);
+    }
   };
 
   return (
@@ -216,7 +232,6 @@ const Contact = () => {
               type="submit"
               value="Send"
               className={classes.footer_button}
-              to="#"
               onClick={handleShow}
             />
           </div>
