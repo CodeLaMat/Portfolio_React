@@ -35,7 +35,6 @@ const Contact = () => {
         form.current,
         "pD9RVhlrClzkEGpaT"
       );
-      console.log("Email successfully sent!", result.text);
       handleShow();
     } catch (error) {
       handleError(error);
