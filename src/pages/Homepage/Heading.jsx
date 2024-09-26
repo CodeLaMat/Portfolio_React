@@ -13,29 +13,33 @@ const Heading = () => {
   const [subIndex, setSubIndex] = useState(0);
   const [blink, setBlink] = useState(true);
   const [deleting, setDeleting] = useState(false);
+  const [delay, setDelay] = useState(100);
+  const [pause, setPause] = useState(false);
 
   useEffect(() => {
+    if (pause) return;
     const handleTyping = () => {
       if (!deleting && subIndex < phrases[index].length) {
         setDisplayedText(phrases[index].substring(0, subIndex + 1));
         setSubIndex(subIndex + 1);
       } else if (!deleting && subIndex === phrases[index].length) {
-        // Pause after typing the full phrase
-        setTimeout(() => setDeleting(true), 1500);
+        setPause(true);
+        setTimeout(() => {
+          setDeleting(true);
+          setPause(false);
+        }, 1500);
       } else if (deleting && subIndex > 0) {
-        // Deleting phase
         setDisplayedText(phrases[index].substring(0, subIndex - 1));
         setSubIndex(subIndex - 1);
       } else if (deleting && subIndex === 0) {
-        // Move to next phrase after deleting
         setDeleting(false);
         setIndex((prevIndex) => (prevIndex + 1) % phrases.length);
       }
     };
 
-    const timeout = setTimeout(handleTyping, deleting ? 50 : 100);
+    const timeout = setTimeout(handleTyping, deleting ? 50 : delay);
     return () => clearTimeout(timeout);
-  }, [subIndex, deleting, index, phrases]);
+  }, [subIndex, deleting, index, phrases, pause, delay]);
 
   useEffect(() => {
     const blinkInterval = setInterval(() => {
@@ -51,8 +55,8 @@ const Heading = () => {
           👋 Hello there! I'm Eyvaz Alishov
         </h1>
         <h2 className={classes.welcomeMessage}>
-          {displayedText}{" "}
-          <span className={classes.cursor}>{blink ? "|" : " "}</span>{" "}
+          {displayedText}
+          <span className={classes.cursor}>{blink ? "|" : " "}</span>
         </h2>
 
         <p className={classes.description}>
