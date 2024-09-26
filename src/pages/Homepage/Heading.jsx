@@ -2,12 +2,6 @@ import React, { useState, useEffect } from "react";
 import classes from "../../styles/Heading.module.scss";
 
 const Heading = () => {
-  const phrases = [
-    "ICT Project Manager",
-    "Full Stack Software Developer",
-    "ICT Project Manager & Full Stack Software Developer",
-  ];
-
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
@@ -17,6 +11,11 @@ const Heading = () => {
   const [pause, setPause] = useState(false);
 
   useEffect(() => {
+    const phrases = [
+      "ICT Project Manager",
+      "Full Stack Software Developer",
+      "ICT Project Manager & Full Stack Software Developer",
+    ];
     if (pause) return;
     const handleTyping = () => {
       if (!deleting && subIndex < phrases[index].length) {
@@ -39,7 +38,7 @@ const Heading = () => {
 
     const timeout = setTimeout(handleTyping, deleting ? 50 : delay);
     return () => clearTimeout(timeout);
-  }, [subIndex, deleting, index, phrases, pause, delay]);
+  }, [subIndex, deleting, index, pause, delay]);
 
   useEffect(() => {
     const blinkInterval = setInterval(() => {
