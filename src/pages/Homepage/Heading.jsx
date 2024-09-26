@@ -7,16 +7,19 @@ const Heading = () => {
   const [subIndex, setSubIndex] = useState(0);
   const [blink, setBlink] = useState(true);
   const [deleting, setDeleting] = useState(false);
-  const [delay, setDelay] = useState(100);
   const [pause, setPause] = useState(false);
+
+  const typingSpeed = 100;
+  const deletingSpeed = 50;
 
   useEffect(() => {
     const phrases = [
-      "ICT Project Manager",
-      "Full Stack Software Developer",
-      "ICT Project Manager & Full Stack Software Developer",
+      "ICT Project Manager ",
+      "Full Stack Developer ",
+      "ICT Project Manager & Full Stack Developer",
     ];
     if (pause) return;
+
     const handleTyping = () => {
       if (!deleting && subIndex < phrases[index].length) {
         setDisplayedText(phrases[index].substring(0, subIndex + 1));
@@ -36,9 +39,12 @@ const Heading = () => {
       }
     };
 
-    const timeout = setTimeout(handleTyping, deleting ? 50 : delay);
+    const timeout = setTimeout(
+      handleTyping,
+      deleting ? deletingSpeed : typingSpeed
+    );
     return () => clearTimeout(timeout);
-  }, [subIndex, deleting, index, pause, delay]);
+  }, [subIndex, deleting, index, pause]);
 
   useEffect(() => {
     const blinkInterval = setInterval(() => {
