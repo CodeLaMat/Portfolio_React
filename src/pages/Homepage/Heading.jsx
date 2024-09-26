@@ -1,7 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import classes from "../../styles/Heading.module.scss";
 
 const Heading = () => {
+  const phrases = [
+    "ICT Project Manager",
+    "Full Stack Software Developer",
+    "ICT Project Manager & Full Stack Software Developer",
+  ];
+
+  const [displayedText, setDisplayedText] = useState("");
+  const [index, setIndex] = useState(0);
+  const [subIndex, setSubIndex] = useState(0);
+  const [blink, setBlink] = useState(true);
+  const [deleting, setDeleting] = useState(false);
+
+  useEffect(() => {
+    const handleTyping = () => {
+      if (!deleting && subIndex < phrases[index].length) {
+        setDisplayedText(phrases[index].substring(0, subIndex + 1));
+        setSubIndex(subIndex + 1);
+      } else if (!deleting && subIndex === phrases[index].length) {
+        // Pause after typing the full phrase
+        setTimeout(() => setDeleting(true), 1500);
+      } else if (deleting && subIndex > 0) {
+        // Deleting phase
+        setDisplayedText(phrases[index].substring(0, subIndex - 1));
+        setSubIndex(subIndex - 1);
+      } else if (deleting && subIndex === 0) {
+        // Move to next phrase after deleting
+        setDeleting(false);
+        setIndex((prevIndex) => (prevIndex + 1) % phrases.length);
+      }
+    };
+
+    const timeout = setTimeout(handleTyping, deleting ? 50 : 100);
+    return () => clearTimeout(timeout);
+  }, [subIndex, deleting, index, phrases]);
+
+  useEffect(() => {
+    const blinkInterval = setInterval(() => {
+      setBlink((prev) => !prev);
+    }, 500);
+    return () => clearInterval(blinkInterval);
+  }, []);
+
   return (
     <div className={classes.heading}>
       <div className={classes.heading_container}>
@@ -9,7 +51,8 @@ const Heading = () => {
           👋 Hello there! I'm Eyvaz Alishov
         </h1>
         <h2 className={classes.welcomeMessage}>
-          ICT Project Manager & Full Stack Software Developer
+          {displayedText}{" "}
+          <span className={classes.cursor}>{blink ? "|" : " "}</span>{" "}
         </h2>
 
         <p className={classes.description}>
@@ -26,6 +69,7 @@ const Heading = () => {
           button below. Thank you for visiting, and I look forward to connecting
           with you!
         </p>
+
         <div>
           <a href="/contact" role="button">
             <button type="button" className={classes.contact_button}>
