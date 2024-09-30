@@ -81,9 +81,9 @@
       "date": "16.12.2022",
       "title": "Habit Tracker",
       "category": "full-stack",
-      "github": "https://github.com/CodeLaMat/habit_tracker-Team_project.git",
+      "github": "https://github.com/CodeLaMat/HabitTrackerApp",
       "description": "Habit-Tracker is an application that helps you to keep up with your daily habits. This is our team project which is created by 4 team members.",
-      "external": "https://codelamat.github.io/habit_tracker-Team_project/",
+      "external": "https://github.com/CodeLaMat/HabitTrackerApp",
       "techs": ["React", "Bootstrap", "Firebase", "Javascript"],
       "company": "Business College Helsinki",
       "showInProjects": true
