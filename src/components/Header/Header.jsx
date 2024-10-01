@@ -68,7 +68,7 @@ export default function Header() {
           </li>
           <li>
             <ExternalLink
-              href="https://www.instagram.com/diplomat_111/"
+              href="https://www.instagram.com/codelamat/"
               target="_blank"
             >
               <img
@@ -81,7 +81,7 @@ export default function Header() {
           </li>
           <li>
             <ExternalLink
-              href="https://www.linkedin.com/in/eyvaz-alishov-54361054/"
+              href="https://www.linkedin.com/in/eyvaz-alishov/"
               target="_blank"
             >
               <img

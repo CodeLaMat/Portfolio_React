@@ -121,7 +121,7 @@ const Contact = () => {
             </div>
             <div className={classes.media_insta}>
               <a
-                href="https://www.instagram.com/diplomat_111/"
+                href="https://www.instagram.com/codelamat/"
                 aria-label="Instagram Link"
                 target="_blank"
                 rel="noreferrer"
@@ -159,7 +159,7 @@ const Contact = () => {
             </div>
             <div className={classes.media_linkedin}>
               <a
-                href="https://www.linkedin.com/in/eyvaz-alishov-54361054/"
+                href="https://www.linkedin.com/in/eyvaz-alishov/"
                 aria-label="Linkedin Link"
                 target="_blank"
                 rel="noreferrer"

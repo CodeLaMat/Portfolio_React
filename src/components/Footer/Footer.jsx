@@ -26,12 +26,12 @@ const Footer = () => {
                 <FaDiscord className={classes.icons} size="100%" />
               </ExternalLink>
 
-              <ExternalLink to href="https://www.instagram.com/diplomat_111/">
+              <ExternalLink to href="https://www.instagram.com/codelamat/">
                 <FaInstagram className={classes.icons} size="100%" />
               </ExternalLink>
               <ExternalLink
                 to
-                href="https://www.linkedin.com/in/eyvaz-alishov-54361054/"
+                href="https://www.linkedin.com/in/eyvaz-alishov/"
               >
                 <FaLinkedin className={classes.icons} size="100%" />
               </ExternalLink>
