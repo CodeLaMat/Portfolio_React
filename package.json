@@ -8,7 +8,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/user-event": "^13.5.0",
     "animate-presence": "^0.2.1",
-    "axios": "^1.2.2",
+    "axios": "^1.7.8",
     "bootstrap": "^5.2.3",
     "firebase": "^10.2.0",
     "framer-motion": "^8.1.3",
