@@ -76,8 +76,8 @@ const Heading = () => {
           that solve real-world problems.
         </p>
         <p>
-          I am currently pursuing an <span>MBA in Business Technologies</span>
-          at <span>Haaga-Helia University of Applied Sciences</span>. This
+          I am currently pursuing an <span>MBA in Business Technologies </span>
+          at <span> Haaga-Helia University of Applied Sciences</span>. This
           program focuses on leadership, strategizing in organizations, and
           mastering digital transformation, further enhancing my ability to
           drive innovation and align technology with business goals.
