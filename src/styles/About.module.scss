@@ -42,12 +42,12 @@
     transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
   .aboutMe {
     grid-template-columns: 1fr;
   }
 
   .imgMe {
-    height: 15rem;
+    display: none;
   }
 }

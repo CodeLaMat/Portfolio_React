@@ -63,7 +63,6 @@ const Heading = () => {
           {displayedText}
           <span className={classes.cursor}>{blink ? "|" : " "}</span>
         </h2>
-
         <p className={classes.description}>
           I am an ICT professional with a dual specialization in{" "}
           <span>software development</span> and{" "}
@@ -75,26 +74,26 @@ const Heading = () => {
           <span>JavaScript</span>, enabling me to deliver cutting-edge solutions
           that solve real-world problems.
         </p>
-        <p>
+        <p className={classes.description}>
           I am currently pursuing an <span>MBA in Business Technologies </span>
           at <span> Haaga-Helia University of Applied Sciences</span>. This
           program focuses on leadership, strategizing in organizations, and
           mastering digital transformation, further enhancing my ability to
           drive innovation and align technology with business goals.
         </p>
-        <p>
+        <p className={classes.description}>
           This portfolio is a showcase of the projects I have worked on and the
           tangible impact they've made. From crafting full-stack applications to
           managing complex projects, I am passionate about innovation and
           aligning technology with business goals.
         </p>
-        <p>
+        <p className={classes.description}>
           I am always open to feedback, collaborations, and opportunities to
           work on meaningful projects that make a difference. If you'd like to
           connect or discuss potential collaborations, feel free to reach out
           via the contact button below.
         </p>
-        <p>
+        <p className={classes.description}>
           Thank you for stopping by, and I look forward to creating impactful
           digital solutions with you!
         </p>

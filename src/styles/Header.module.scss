@@ -118,16 +118,9 @@
   justify-content: space-between;
 }
 
-@media only screen and (max-device-width: 580px) {
-  .eMail {
-    margin: 10px auto;
-    padding: 10px;
-    letter-spacing: 0.4em;
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
-    position: relative;
+@media (max-width: 780px) {
+  .eMailContainer {
+    display: none;
   }
   .socialMedia {
     display: none;
