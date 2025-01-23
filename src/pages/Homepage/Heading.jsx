@@ -65,18 +65,38 @@ const Heading = () => {
         </h2>
 
         <p className={classes.description}>
-          I am an ICT professional specializing in both software development and
-          project management. With extensive experience leading cross-functional
-          teams and developing user-centric applications, I am passionate about
-          creating innovative solutions that align with business goals. My
-          toolbox includes expertise in React, Node.js, TypeScript, and
-          JavaScript, which I leverage to stay at the forefront of technology.
-          This portfolio showcases my projects and the impact they've made. I'm
-          always eager for feedback, collaborations, and opportunities to
-          contribute to meaningful projects. Let's connect and create impactful
-          digital solutions together! Feel free to reach out using the contact
-          button below. Thank you for visiting, and I look forward to connecting
-          with you!
+          I am an ICT professional with a dual specialization in{" "}
+          <span>software development</span> and{" "}
+          <span>IT project management</span>. Over the years, I have honed my
+          skills by leading cross-functional teams and developing user-centric
+          applications that drive business success. My expertise spans a wide
+          array of modern technologies, including <span>React</span>,{" "}
+          <span>Node.js</span>, <span>TypeScript</span>, and{" "}
+          <span>JavaScript</span>, enabling me to deliver cutting-edge solutions
+          that solve real-world problems.
+        </p>
+        <p>
+          I am currently pursuing an <span>MBA in Business Technologies</span>
+          at <span>Haaga-Helia University of Applied Sciences</span>. This
+          program focuses on leadership, strategizing in organizations, and
+          mastering digital transformation, further enhancing my ability to
+          drive innovation and align technology with business goals.
+        </p>
+        <p>
+          This portfolio is a showcase of the projects I have worked on and the
+          tangible impact they've made. From crafting full-stack applications to
+          managing complex projects, I am passionate about innovation and
+          aligning technology with business goals.
+        </p>
+        <p>
+          I am always open to feedback, collaborations, and opportunities to
+          work on meaningful projects that make a difference. If you'd like to
+          connect or discuss potential collaborations, feel free to reach out
+          via the contact button below.
+        </p>
+        <p>
+          Thank you for stopping by, and I look forward to creating impactful
+          digital solutions with you!
         </p>
 
         <div>

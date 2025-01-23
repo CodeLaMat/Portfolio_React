@@ -14,9 +14,14 @@ const FullStackProjects = () => {
       .then((response) => {
         const allProjects = Object.values(response.data);
 
-        const fullStackProjects = allProjects.filter(
-          (project) => project.category === "full-stack"
-        );
+        const fullStackProjects = allProjects
+          .filter((project) => project.category === "full-stack")
+          .sort((a, b) => {
+            const dateA = new Date(a.date.split(".").reverse().join("-"));
+            const dateB = new Date(b.date.split(".").reverse().join("-"));
+            return dateB - dateA;
+          });
+
         setProjects(fullStackProjects);
         setIsLoading(false);
       })

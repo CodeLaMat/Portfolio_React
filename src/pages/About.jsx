@@ -16,9 +16,9 @@ const About = () => {
           projects, managing large-scale ICT initiatives in the public sector.
           Later, I moved to Finland and focused on technical project management
           and software development. I also established my own company in
-          Germany, where I served as Managing Director more than three years.
-          I'm a citizen of Finland and Azerbaijan.
-        </p>{" "}
+          Germany, where I served as Managing Director for more than three
+          years. I'm a citizen of Finland and Azerbaijan.
+        </p>
         <p>
           At <span>Virittämö</span>, the employment service of the City of
           Helsinki, I worked as a full-stack developer. In this role, I
@@ -45,7 +45,7 @@ const About = () => {
           </span>{" "}
           I leverage these technologies to build user-centric, efficient
           solutions.
-        </p>{" "}
+        </p>
         <p>
           I have experience leading teams in <span>Agile </span>and{" "}
           <span>Scrum </span>environments, focusing on iterative development,
@@ -57,6 +57,48 @@ const About = () => {
           legal acts, and served as a member of the EU-Azerbaijan Sub-committee
           on Justice, Security, Human Rights, and Democracy.
         </p>
+        <p>
+          Currently, I am pursuing my Master of Business Administration (MBA)
+          studies in Business Technologies at
+          <span>Haaga-Helia University of Applied Sciences</span>. The program
+          focuses on business technologies, leadership, and strategizing in
+          organizations, enhancing my ability to drive digital transformation
+          and lead innovative projects effectively.
+        </p>
+        <p>My soft skills as a project manager include:</p>
+        <ul>
+          <li>
+            <span>Leadership:</span> Inspiring and guiding teams toward
+            achieving project goals with a collaborative approach.
+          </li>
+          <li>
+            <span>Communication:</span> Effectively conveying ideas to both
+            technical and non-technical stakeholders, fostering understanding
+            and alignment.
+          </li>
+          <li>
+            <span>Problem-solving:</span> Identifying challenges early and
+            implementing innovative, practical solutions to ensure project
+            success.
+          </li>
+          <li>
+            <span>Time management:</span> Prioritizing tasks and ensuring
+            projects are completed within deadlines and budgets.
+          </li>
+          <li>
+            <span>Conflict resolution:</span> Addressing conflicts
+            constructively to maintain team cohesion and focus on objectives.
+          </li>
+          <li>
+            <span>Adaptability:</span> Adjusting strategies to align with
+            changing project requirements and environments.
+          </li>
+          <li>
+            <span>Stakeholder management:</span> Building strong relationships
+            with clients, vendors, and team members to ensure smooth project
+            execution.
+          </li>
+        </ul>
         <p>
           I am proficient in collaboration and project management tools like{" "}
           <span>Figma</span>, <span>Trello</span>, <span>Jira</span>, and{" "}
